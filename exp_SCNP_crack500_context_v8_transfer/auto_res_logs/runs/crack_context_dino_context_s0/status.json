@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "created": 1789696089.27736,
+  "pid": 177233,
+  "steps": 3000,
+  "stage": "dino_context",
+  "step": 3000,
+  "elapsed_sec": 2117.1376729011536,
+  "best_validation_dice": 0.7869488978451179
+}

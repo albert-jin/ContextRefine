@@ -1,0 +1,195 @@
+{
+  "created": 1789691669.24536,
+  "plan_sha256": "75d9fec75074d4a7c903a47b8e1f11a997750750b4a9b2aa928351f31ef43f48",
+  "jobs": [
+    {
+      "id": "crack_context_smoke_base_s0_retry1",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "base",
+        "--run-id",
+        "crack_context_smoke_base_s0_retry1",
+        "--steps",
+        "4",
+        "--batch",
+        "8",
+        "--workers",
+        "2",
+        "--val-every",
+        "4",
+        "--smoke"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 22000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_smoke_base_s0_retry1/status.json",
+      "depends_on": []
+    },
+    {
+      "id": "crack_context_smoke_local_refine_s0_retry1",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "local_refine",
+        "--run-id",
+        "crack_context_smoke_local_refine_s0_retry1",
+        "--steps",
+        "4",
+        "--batch",
+        "8",
+        "--workers",
+        "2",
+        "--val-every",
+        "4",
+        "--warm",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_smoke_base_s0_retry1/best.pt",
+        "--smoke"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 18000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_smoke_local_refine_s0_retry1/status.json",
+      "depends_on": [
+        "crack_context_smoke_base_s0_retry1"
+      ]
+    },
+    {
+      "id": "crack_context_smoke_dino_context_s0_retry1",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "dino_context",
+        "--run-id",
+        "crack_context_smoke_dino_context_s0_retry1",
+        "--steps",
+        "4",
+        "--batch",
+        "8",
+        "--workers",
+        "2",
+        "--val-every",
+        "4",
+        "--warm",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_smoke_base_s0_retry1/best.pt",
+        "--smoke"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 18000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_smoke_dino_context_s0_retry1/status.json",
+      "depends_on": [
+        "crack_context_smoke_base_s0_retry1"
+      ]
+    },
+    {
+      "id": "crack_context_base_s0",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "base",
+        "--run-id",
+        "crack_context_base_s0",
+        "--steps",
+        "12000",
+        "--batch",
+        "8",
+        "--workers",
+        "4",
+        "--val-every",
+        "1200"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 22000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/status.json",
+      "depends_on": [
+        "crack_context_smoke_local_refine_s0_retry1",
+        "crack_context_smoke_dino_context_s0_retry1"
+      ]
+    },
+    {
+      "id": "crack_context_local_refine_s0",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "local_refine",
+        "--run-id",
+        "crack_context_local_refine_s0",
+        "--steps",
+        "3000",
+        "--batch",
+        "8",
+        "--workers",
+        "4",
+        "--val-every",
+        "300",
+        "--warm",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/best.pt"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 18000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/status.json",
+      "depends_on": [
+        "crack_context_base_s0"
+      ]
+    },
+    {
+      "id": "crack_context_dino_context_s0",
+      "kind": "training",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+        "--stage",
+        "dino_context",
+        "--run-id",
+        "crack_context_dino_context_s0",
+        "--steps",
+        "3000",
+        "--batch",
+        "8",
+        "--workers",
+        "4",
+        "--val-every",
+        "300",
+        "--warm",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/best.pt"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 18000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/status.json",
+      "depends_on": [
+        "crack_context_base_s0"
+      ]
+    },
+    {
+      "id": "crack_context_formal_evaluation",
+      "kind": "evaluation",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer/research/finalize_transfer.py"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_crack500_context_v8_transfer",
+      "reserve_mib": 6000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/auto_res_logs/crack500_context_v8_20260918/round_results.json",
+      "depends_on": [
+        "crack_context_base_s0",
+        "crack_context_local_refine_s0",
+        "crack_context_dino_context_s0"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "status": "completed",
+  "created": 1789695082.4582138,
+  "pid": 176384,
+  "steps": 3000,
+  "stage": "local_refine",
+  "step": 3000,
+  "elapsed_sec": 978.8364994525909,
+  "best_validation_dice": 0.7862297021057163
+}

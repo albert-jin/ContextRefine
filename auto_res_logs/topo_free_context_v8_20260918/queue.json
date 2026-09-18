@@ -1,0 +1,60 @@
+{
+  "created": 1789686650.1304512,
+  "plan_sha256": "d8a607f45ac2bc988e3f53bce8f89bd3f1b43684f3066a809a5826242a617874",
+  "initial_parameter_sha256": "f8ff75475093e82b44203b4e166f0844fa53f19f6fef9024cfcdc3494b8b5229",
+  "smoke_verification": {
+    "dino_context": {
+      "peak_reserved_mib": 15790.0,
+      "reserve_mib": 17920
+    }
+  },
+  "jobs": [
+    {
+      "id": "topo_free_context_dino_context_s0",
+      "kind": "training",
+      "status": "pending",
+      "method_name": "SCNP unrestricted frozen DINOv2 context residual refinement",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_topo_free_context_v8/research/train_pretrained.py",
+        "--method",
+        "dino_context",
+        "--seed",
+        "0",
+        "--steps",
+        "3000",
+        "--batch",
+        "8",
+        "--workers",
+        "4",
+        "--val-every",
+        "300",
+        "--run-id",
+        "topo_free_context_dino_context_s0"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_topo_free_context_v8",
+      "reserve_mib": 17920,
+      "result": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/status.json",
+      "early_stop_external": {
+        "cwd": "/hy-tmp/scnp_auto_research_20260916/exp_SCNP_topo_context_residual_v7",
+        "id": "topo_context_dino_context_s0"
+      }
+    },
+    {
+      "id": "topo_free_context_formal_evaluation",
+      "kind": "evaluation",
+      "status": "pending",
+      "command": [
+        "/hy-tmp/scnp_auto_research_20260916/env/bin/python",
+        "/hy-tmp/scnp_auto_research_20260916/scripts/finalize_topo_free_context.py"
+      ],
+      "cwd": "/hy-tmp/scnp_auto_research_20260916",
+      "reserve_mib": 5000,
+      "result": "/hy-tmp/scnp_auto_research_20260916/auto_res_logs/topo_free_context_v8_20260918/round_results.json",
+      "depends_on": [
+        "topo_free_context_dino_context_s0"
+      ],
+      "allow_terminal_dependencies": true
+    }
+  ]
+}

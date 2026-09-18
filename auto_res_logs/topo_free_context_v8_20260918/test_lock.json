@@ -1,0 +1,104 @@
+{
+  "created": 1789688140.936294,
+  "name": "TopoMortar unrestricted frozen DINOv2 context residual v8",
+  "test_accessed_at_lock": false,
+  "dataset_commit": "b1f31f20a41b20aa775c21078b2c432c6dcc26b4",
+  "training": "official50train, accurate masks;20validation",
+  "test_partition": "official IDs71..420, ID50/OOD300 and six OOD groups of50, no mixed score substituted for ID/OOD",
+  "inference": {
+    "threshold": 0.5,
+    "tta": false,
+    "postprocessing": false,
+    "batch": 1,
+    "size": 512,
+    "precision": "FP16 autocast, FP32 softmax, same checkpoint-specific determinism flags as training validation",
+    "normalization": "RGB /255, clamp[0,1], ImageNet mean [.485,.456,.406] and std [.229,.224,.225]"
+  },
+  "validation_guard": {
+    "direct_input_prediction_target_bitwise_match": true,
+    "historical_max_per_image_dice_error": 0.0001,
+    "origin": "Existing validation tolerance fixed before any test access; not adjusted from test results"
+  },
+  "selection": "Both best checkpoints fixed by already recorded validation only; evaluate and retain both irrespective of first score",
+  "public_reference_path": "auto_res_logs/results/public_topomortar_baselines.json",
+  "public_reference_sha256": "21638e6fab0ed353d0837a32b7583f9ff913a9837b5283a9dc5fa5ff3853fc5f",
+  "public_best_mean": {
+    "ID": {
+      "configuration": "randhue/clDiceLoss",
+      "mean": 0.9130586574,
+      "sd_across_runs": 0.0004736093441940284
+    },
+    "OOD": {
+      "configuration": "randhue/CESkeletonRecallLoss",
+      "mean": 0.7487800411430007,
+      "sd_across_runs": 0.003701052509612503
+    }
+  },
+  "public_best_single_run": {
+    "ID": {
+      "configuration": "randhue/clDiceLoss",
+      "seed_label": 8,
+      "dice": 0.9136708862,
+      "source_path": "results/randhue/accurate/large/clDiceLoss/8.csv"
+    },
+    "OOD": {
+      "configuration": "randhue/CESkeletonRecallLoss",
+      "seed_label": 9,
+      "dice": 0.7555399946666667,
+      "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/9.csv"
+    }
+  },
+  "delivery_rule": "One valid declared single-seed official test result exceeding a verified public comparator suffices; no dedicated ablations, minimum0.5pp, multiple seeds or significance gate. Report all attempts, both ID/OOD, comparison conditions and incomplete literature coverage.",
+  "comparison_limits": [
+    "Different architecture/optimizer/normalization/supervision and ImageNet pretraining vs author baseline; disclose, do not claim identical training recipe.",
+    "160 author runs are a pinned verified reference set, not exhaustive global SOTA. Best mean and strongest individual run are both reported.",
+    "New evaluation replaces the agent-imposed innovation-promotion gate, not training/source validation or test integrity checks.",
+    "Future tuning after viewing these test outcomes cannot be claimed as fresh independent confirmation on this same test."
+  ],
+  "wait_for": "Validation replay at a free guarded slot; test download only after current ConvNeXt controller and both jobs finish or are validly pruned, preserving active frozen no-test assertions.",
+  "metric_code_sha256": "2ab6a41695cf26b136a1033753b6f1eb1abec4e70409b85b0348ef95a21ea142",
+  "metric_verification_sha256": "5c907b8d0a4c56ab297eef2050138a42bfaee880204e0e2b59f5090bab547228",
+  "test_history": "Post-development benchmark; earlier test outcomes informed this round; model selection uses fixed clean/stress validation only.",
+  "jobs": [
+    {
+      "id": "topo_free_context_dino_context_s0_best",
+      "repo": "exp_SCNP_topo_free_context_v8",
+      "run_id": "topo_free_context_dino_context_s0",
+      "checkpoint": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/best.pt",
+      "checkpoint_sha256": "ab80816339f64d24f941d2ff4bb1788bfe1a6ee0de093d344d96c19b15f79edc",
+      "step": 2700,
+      "role": "prespecified_main_comparison",
+      "seed": 0,
+      "method": "SCNP unrestricted frozen DINOv2 context residual refinement",
+      "validation_dice": 0.9460818324745877,
+      "selection_score": 0.9420270740453589,
+      "deterministic_algorithms": true,
+      "sources": {
+        "exp_SCNP_topo_free_context_v8/research/amodal_completion.py": "eb6415d2e9378c33baf63bc8e3a9792f3bd54a12dbf2a2cc0ff5e6338cfc750b",
+        "exp_SCNP_topo_free_context_v8/research/chroma_consistency.py": "7abbe89713341ad186a60342fa6d23f68974c2abbe156a7e88c015f41def33e3",
+        "exp_SCNP_topo_free_context_v8/research/conditional_budget.py": "7822fc9dc1024529e2003c8f4f6a6ee5fc73c30ae2a2d69673e6ab6619a630bd",
+        "exp_SCNP_topo_free_context_v8/research/convnext_unet.py": "e69150407d429c8b5144bb06a71e445a2d0fb30aebf2afcb36dec337dc155ca4",
+        "exp_SCNP_topo_free_context_v8/research/innovations.py": "dd6385c592aed7687b1b4a3c06934fb2120790db711ff352aa15d5960ff5b671",
+        "exp_SCNP_topo_free_context_v8/research/losses.py": "037c5c23af9eac11be0b8d30698d72faf8a0684634944c17a892959e6bf2d212",
+        "exp_SCNP_topo_free_context_v8/research/mass_budget.py": "879b3054e8dc1d909b671576e41807f1145ca40889c545b01d7316896f7867ad",
+        "exp_SCNP_topo_free_context_v8/research/model.py": "d0004f10c09d2d3d092044a2777e46425c8b945e9b898649e67e5a328e5f1d3e",
+        "exp_SCNP_topo_free_context_v8/research/pretrained_unet.py": "c7aaf91b4326ebb05e2d2f3b0dc34e41f419f067d0e9118574a36f8e6fb9692e",
+        "exp_SCNP_topo_free_context_v8/research/test_mechanisms.py": "86a6fef5cc63298a3e9ec833bfc892b5de1b6f17f28e1728103a074796ab68ed",
+        "exp_SCNP_topo_free_context_v8/research/test_pretrained_unet.py": "6e8499cbf16e6f28201fabd5de2ddcff65a1f582fa80cc76f262f7dd1f4f9dfa",
+        "exp_SCNP_topo_free_context_v8/research/train.py": "380ed45aca2fea7715ff56f946f08553c01db7756bb37571e25904023356e1f9",
+        "exp_SCNP_topo_free_context_v8/research/train_pretrained.py": "a0fa396d8830e58243bcefd53826149d77b3441b8c80f46f36e57db19854b73c",
+        "exp_SCNP_topo_free_context_v8/research/train_strong.py": "acaf6078ef68a186ac7752ec61265ab5b492ef7a1ff34175593f249da8120273",
+        "exp_SCNP_topo_free_context_v8/research/visibility_budget.py": "62ecf12d7d3d0559817083255734204b326481885b3a073bcc3911a7268d49b5",
+        "exp_SCNP_topo_free_context_v8/research/context_residual.py": "81e66be54aeda9d9167e421f8f0209cb0df80092d5a19e866dc5884d15f82f55"
+      },
+      "records": {
+        "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/config.json": "b6f8a349849a09483ee3c3908dbfb2850ecffbfdd53374ba23717cfa987ac464",
+        "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/data_manifest.json": "9e1f647ac3d5db0f5baba3d2cbf0723e2e6e1b0d6411088024a550a16ebaa7ff",
+        "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/best_validation.json": "26416115df03f6424feaa65e34859693e7ee4de0c6fd44cfffb246f92beae5ae",
+        "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/status.json": "1df384291f61f8124a3748bffb3f3d14b78088d88a442b7d1868aaf1913252a7",
+        "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/source_hashes.json": "c8369e91af980fd3f6516cf475bda72d7d4cc987c6ea98c1adb5c28b356a4e2a"
+      }
+    }
+  ],
+  "excluded_training_runs": []
+}

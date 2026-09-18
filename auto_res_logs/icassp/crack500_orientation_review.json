@@ -1,0 +1,64 @@
+{
+  "created": 1789627330.9827645,
+  "training_image_ccw_degrees": {
+    "20160326_144512": 90,
+    "20160326_150319": 90,
+    "20160330_170428": 90
+  },
+  "evidence": "auto_res_logs/icassp/crack500_orientation_candidates.png",
+  "evidence_sha256": "e736ceb8eaf83801c3f383e04c4a2f12339c024485ec7b21fe6430f510cb61f1",
+  "review": "Visual overlays confirm CCW90 source image rotation aligns all three unchanged source masks; CCW270 does not. Correct only derived training cache; no changes to raw files or validation/test. Fixed before any model fitting.",
+  "source_records": [
+    {
+      "split": "train",
+      "id": "20160326_144512",
+      "image": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160326_144512.jpg",
+      "mask": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160326_144512_mask.png",
+      "image_size": [
+        1440,
+        2560
+      ],
+      "mask_size": [
+        2560,
+        1440
+      ],
+      "exif_orientation": 1,
+      "image_sha256": "d1a6ae6bb336909e1597a7740b4fbb76b6bd099fbeeded188a9bbadb6eff9b95",
+      "mask_sha256": "1e1e7b924201ca80fe9843fa05fe2de71ffc78d44f20ad2796482ccf7c5832c1"
+    },
+    {
+      "split": "train",
+      "id": "20160326_150319",
+      "image": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160326_150319.jpg",
+      "mask": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160326_150319_mask.png",
+      "image_size": [
+        1440,
+        2560
+      ],
+      "mask_size": [
+        2560,
+        1440
+      ],
+      "exif_orientation": 1,
+      "image_sha256": "e239a275d1b63408cffceeab398cad6d7ae5b64bc302b3cf90b7aa0027c280ff",
+      "mask_sha256": "de6fb3759580c6c1681ca56cdabf11eb02b714153fc8d2d1ec5dc8a8b31d8051"
+    },
+    {
+      "split": "train",
+      "id": "20160330_170428",
+      "image": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160330_170428.jpg",
+      "mask": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160330_170428_mask.png",
+      "image_size": [
+        1440,
+        2560
+      ],
+      "mask_size": [
+        2560,
+        1440
+      ],
+      "exif_orientation": 1,
+      "image_sha256": "c64c97bbad9811d3e8a52def8fe557b1b094c39b808a1fb58a32b6113dd077e5",
+      "mask_sha256": "cda2b3e15d9e88f2ac434812d4c931180637ef3e4b990e5dc46d01aadf63d7d8"
+    }
+  ]
+}

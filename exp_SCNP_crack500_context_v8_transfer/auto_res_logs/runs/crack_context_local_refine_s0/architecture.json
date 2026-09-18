@@ -1,0 +1,8 @@
+{
+  "parameters": 32159155,
+  "trainable_parameters": 93633,
+  "frozen_before": {
+    "base": "6f38b02478069b03c0e2a088127687880d9c3a311bdadaceb18877be937eadd3",
+    "dino": null
+  }
+}

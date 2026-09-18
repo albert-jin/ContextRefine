@@ -1,0 +1,18 @@
+{
+  "research/amodal_completion.py": "eb6415d2e9378c33baf63bc8e3a9792f3bd54a12dbf2a2cc0ff5e6338cfc750b",
+  "research/chroma_consistency.py": "7abbe89713341ad186a60342fa6d23f68974c2abbe156a7e88c015f41def33e3",
+  "research/conditional_budget.py": "7822fc9dc1024529e2003c8f4f6a6ee5fc73c30ae2a2d69673e6ab6619a630bd",
+  "research/convnext_unet.py": "e69150407d429c8b5144bb06a71e445a2d0fb30aebf2afcb36dec337dc155ca4",
+  "research/innovations.py": "dd6385c592aed7687b1b4a3c06934fb2120790db711ff352aa15d5960ff5b671",
+  "research/losses.py": "037c5c23af9eac11be0b8d30698d72faf8a0684634944c17a892959e6bf2d212",
+  "research/mass_budget.py": "879b3054e8dc1d909b671576e41807f1145ca40889c545b01d7316896f7867ad",
+  "research/model.py": "d0004f10c09d2d3d092044a2777e46425c8b945e9b898649e67e5a328e5f1d3e",
+  "research/pretrained_unet.py": "c7aaf91b4326ebb05e2d2f3b0dc34e41f419f067d0e9118574a36f8e6fb9692e",
+  "research/test_mechanisms.py": "86a6fef5cc63298a3e9ec833bfc892b5de1b6f17f28e1728103a074796ab68ed",
+  "research/test_pretrained_unet.py": "6e8499cbf16e6f28201fabd5de2ddcff65a1f582fa80cc76f262f7dd1f4f9dfa",
+  "research/train.py": "380ed45aca2fea7715ff56f946f08553c01db7756bb37571e25904023356e1f9",
+  "research/train_pretrained.py": "a0fa396d8830e58243bcefd53826149d77b3441b8c80f46f36e57db19854b73c",
+  "research/train_strong.py": "acaf6078ef68a186ac7752ec61265ab5b492ef7a1ff34175593f249da8120273",
+  "research/visibility_budget.py": "62ecf12d7d3d0559817083255734204b326481885b3a073bcc3911a7268d49b5",
+  "research/context_residual.py": "81e66be54aeda9d9167e421f8f0209cb0df80092d5a19e866dc5884d15f82f55"
+}

@@ -1,0 +1,9 @@
+{
+  "parameters": 54215731,
+  "trainable_parameters": 192065,
+  "frozen_sha256": {
+    "base": "14729de17270b6f998f5a1fb790da74d723fdfb4eb2c2d2ef088bb11288b3309",
+    "dino": "b613086e834c53ef0f982bf072d360fedeb27189192d8e1b833d84c70090b5d2"
+  },
+  "extra_dino_features": true
+}

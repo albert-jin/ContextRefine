@@ -1,0 +1,76 @@
+{
+  "remote_root": "/hy-tmp/scnp_auto_research_20260916",
+  "binary_weights_included": false,
+  "items": [
+    {
+      "project": "exp_SCNP_topo_free_context_v8",
+      "run_id": "topo_free_context_dino_context_s0",
+      "role": "final_method",
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/best.pt",
+      "included": false,
+      "sha256": "ab80816339f64d24f941d2ff4bb1788bfe1a6ee0de093d344d96c19b15f79edc"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run_id": "crack_context_dino_context_s0",
+      "role": "final_method_and_controls",
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/best.pt",
+      "included": false,
+      "sha256": "0cb0d8bf69af30f68e8aee57666cc0c8784e2f0b6a901ca417706e629d6cc399"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run_id": "crack_context_base_s0",
+      "role": "final_method_and_controls",
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/best.pt",
+      "included": false,
+      "sha256": "6874e5b29011c9fa6038c703b8d8d36526c50ba6e451abf856c585635423b668"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run_id": "crack_context_local_refine_s0",
+      "role": "final_method_and_controls",
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/best.pt",
+      "included": false,
+      "sha256": "969d5216f72b8822af5820204d9a7c720c139fba5c0adfcb1a6349cce3fb88d1"
+    },
+    {
+      "project": "exp_SCNP_topo_visibility_budget_v6",
+      "run_id": "topo_visibility_pair_base_s0",
+      "role": "topomortar_local_warm_start",
+      "path": "exp_SCNP_topo_visibility_budget_v6/auto_res_logs/runs/topo_visibility_pair_base_s0/best.pt",
+      "included": false,
+      "sha256": "eed07a6e1185c59e6f2cc5e9591641fa5a708089806a58fdfc2feb8bce22ec6e"
+    },
+    {
+      "project": "exp_SCNP_topo_convnext_chroma_v4",
+      "run_id": "topo_convnext_shape_consistency_s0",
+      "role": "topomortar_ancestor",
+      "path": "exp_SCNP_topo_convnext_chroma_v4/auto_res_logs/runs/topo_convnext_shape_consistency_s0/best.pt",
+      "included": false,
+      "sha256": "cf74b92c8eef012af63b537057d7225112a74a7a7a34783213a50c861fecd4a6"
+    },
+    {
+      "project": "exp_SCNP_pretrained_convnext_controls",
+      "run_id": "convnext_det_base_s0",
+      "role": "topomortar_ancestor",
+      "path": "exp_SCNP_pretrained_convnext_controls/auto_res_logs/runs/convnext_det_base_s0/best.pt",
+      "included": false,
+      "sha256": "fb1f96fdcec988e94f5061043fd56b3be3153316ec4bca0f32f427e5c4393a39"
+    },
+    {
+      "path": "data/pretrained_weights/dinov2_vits14_pretrain.pth",
+      "sha256": "b938bf1bc15cd2ec0feacfe3a1bb553fe8ea9ca46a7e1d8d00217f29aef60cd9",
+      "url": "https://dl.fbaipublicfiles.com/dinov2/dinov2_vits14/dinov2_vits14_pretrain.pth",
+      "role": "DINOv2-S/14 pretrained",
+      "included": false
+    },
+    {
+      "path": "data/pretrained_weights/convnext_tiny-983f1562.pth",
+      "sha256": "983f1562536e84ff750a1576fb08e54de751dbf2e17c0d8a4a13704341fdcd3d",
+      "url": "https://download.pytorch.org/models/convnext_tiny-983f1562.pth",
+      "role": "ImageNet ConvNeXt-Tiny pretrained",
+      "included": false
+    }
+  ]
+}

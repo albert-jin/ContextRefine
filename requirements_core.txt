@@ -1,0 +1,11 @@
+# Known recorded core versions; CUDA wheels installed via the separate PyTorch index.
+# This is a dependency aid, not a complete historical pip freeze.
+torch==2.9.1
+torchvision==0.24.1
+monai==1.6.0
+numpy==2.2.5
+scipy
+scikit-image
+Pillow
+PyYAML
+# DINOv2-S/14 must be checked out at the revision in resource_manifest.json.

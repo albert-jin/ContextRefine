@@ -1,0 +1,23 @@
+{
+  "cases": 104,
+  "passed": true,
+  "gudhi": "3.13.0",
+  "reference_mismatch_cases": [
+    {
+      "case": 0,
+      "ours": [
+        0,
+        0
+      ],
+      "at_threshold0": [
+        0,
+        0
+      ],
+      "reference_all_intervals": [
+        1,
+        0
+      ]
+    }
+  ],
+  "note": "Dice definition matches binary foreground Dice; topology comparison to published scores must disclose any reference mismatch"
+}

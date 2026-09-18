@@ -1,0 +1,688 @@
+{
+  "paper_reference": {
+    "name": "ContextRefine(3).pdf",
+    "sha256": null,
+    "extracted_text_sha256": "15a4a746ca57322635316fb37823d556c376d335d92f3d4ff2938d9c0e915010",
+    "modified": false,
+    "review": "Text extracted and pages 2-4 rendered and reviewed; original attachment no longer available at final hashing time"
+  },
+  "algorithm_changed": false,
+  "runs": [
+    {
+      "project": "exp_SCNP_topo_free_context_v8",
+      "run": "topo_free_context_dino_context_s0"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run": "crack_context_base_s0"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run": "crack_context_local_refine_s0"
+    },
+    {
+      "project": "exp_SCNP_crack500_context_v8_transfer",
+      "run": "crack_context_dino_context_s0"
+    }
+  ],
+  "python_files_parsed": 88,
+  "nonexecutable_upstream_examples": [
+    "exp_SCNP_crack500_context_v8_transfer/SCNP/scnp_example.py",
+    "exp_SCNP_topo_free_context_v8/SCNP/scnp_example.py"
+  ],
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "a1bb34cf5c4ce4b258a0af79f448bbc3d968f7ef0eeab8d2d4953d3479ce0337"
+    },
+    {
+      "path": "auto_res_logs/crack500_context_v8_20260918/finalize_commands.jsonl",
+      "sha256": "b832d45edaa5c20cd0a99a86b2e47250b6fd6b5dbb303e94f8614c8d37f633d1"
+    },
+    {
+      "path": "auto_res_logs/crack500_context_v8_20260918/queue.json",
+      "sha256": "5429ed44313005a0a98d8459785e7deea7dd0c59f18510c0aa888e43dae23e6c"
+    },
+    {
+      "path": "auto_res_logs/crack500_context_v8_20260918/resource_manifest.json",
+      "sha256": "09d7ef08b52a4387ac6d47f59f2d39c592a5c43bd715ab642f18a74b9a1df6d3"
+    },
+    {
+      "path": "auto_res_logs/icassp/crack500_orientation_review.json",
+      "sha256": "e64dd8ddd3232337c73a545e14e9f304e4f855c692ab35b6e8133e8b53eb9f5b"
+    },
+    {
+      "path": "auto_res_logs/icassp/crack500_split_exclusions.json",
+      "sha256": "ac3f04f56691eed8bad3af2766556ce18741eb706f8edda40958a5be03d49d1b"
+    },
+    {
+      "path": "auto_res_logs/results/public_topomortar_baselines.json",
+      "sha256": "21638e6fab0ed353d0837a32b7583f9ff913a9837b5283a9dc5fa5ff3853fc5f"
+    },
+    {
+      "path": "auto_res_logs/results/test_metric_verification.json",
+      "sha256": "5c907b8d0a4c56ab297eef2050138a42bfaee880204e0e2b59f5090bab547228"
+    },
+    {
+      "path": "auto_res_logs/topo_free_context_v8_20260918/queue.json",
+      "sha256": "227a4c79ac6efc05cc5f43da9a74cdb8a9c67daf107ed97e5ee7074922797393"
+    },
+    {
+      "path": "auto_res_logs/topo_free_context_v8_20260918/resource_manifest.json",
+      "sha256": "09d7ef08b52a4387ac6d47f59f2d39c592a5c43bd715ab642f18a74b9a1df6d3"
+    },
+    {
+      "path": "auto_res_logs/topo_free_context_v8_20260918/test_lock.json",
+      "sha256": "e201cd22472c952eeddcd5066f5854d3f73bd0e87df27b803c0d913e47a53937"
+    },
+    {
+      "path": "CHECKPOINTS.json",
+      "sha256": "1f2375776ae7fdb51ce7fe6d15227d6461f40834592acad2e084537ffa08625b"
+    },
+    {
+      "path": "data/icassp/crack500/manifest.json",
+      "sha256": "8044bc6505e0a82b17faa538bb718b3d3df27d4a99586dbc4eefebdef0d79ddb"
+    },
+    {
+      "path": "data/TopoMortar/dataset/splits.yaml",
+      "sha256": "2bad64513d3ea5c80016548c0c1b9c5117ef5f2fe866ef9e19f29628a4f5e15a"
+    },
+    {
+      "path": "data/TopoMortar/test_download_manifest.json",
+      "sha256": "0840cd194633c4afaab92bc376e21d4ee7aaec213e092be218e918a2f0962b82"
+    },
+    {
+      "path": "docs/manuscript-correspondence.md",
+      "sha256": "7c91570d1496076b67682a2ffd20b7704debd3046f26f554dd4d82648172b93f"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/architecture.json",
+      "sha256": "c56c70dbc40852a926a670ada04152cdb1e8b31bd6b16976c15cb085bb1615f8"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/best_validation.json",
+      "sha256": "22747a0e783e732d125ded2ce72eb7e747468b60bb159d08f2d67b9ac72c8133"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/config.json",
+      "sha256": "6e61a654d491ce244e6141eace116fd501e36bb1d8a86003f6d42c6fa78c1493"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/data_manifest.json",
+      "sha256": "8044bc6505e0a82b17faa538bb718b3d3df27d4a99586dbc4eefebdef0d79ddb"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/initialization.json",
+      "sha256": "645e24473dba7e1ddc416be100df7515e2ed5fad69e31268fa97a39ac6374ee6"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/source_hashes.json",
+      "sha256": "3fdc560bb958dbbd5130a0114c9b96e2102dccf546aaa66b66fced3c5bbf48f3"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/status.json",
+      "sha256": "3014cfc56a1b5830c1517344cc884307e71e819c339fecf8573b30154972fd57"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_base_s0/test_lock.json",
+      "sha256": "91b34635704d7a1a87b20c35004b64731cf11b4f1d411704ce7b0a5575698eab"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/architecture.json",
+      "sha256": "71fdc3a1afb93b4e9dd54f314cd6284870f2705630918caaa27da02b6f0b8afd"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/best_validation.json",
+      "sha256": "d79b39c5232cd5fd45e01e0748778b7c9842d27ed9a03d780f7b1a15c94f00e0"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/config.json",
+      "sha256": "6f2e4240013057c400e4aeeb45b0ee30110576e132914b6162f22b3a97a52cf7"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/data_manifest.json",
+      "sha256": "8044bc6505e0a82b17faa538bb718b3d3df27d4a99586dbc4eefebdef0d79ddb"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/initialization.json",
+      "sha256": "14ec0d347421ddca07091f1f14638a3c017a124e03e08f6d3b365557a5161f6d"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/source_hashes.json",
+      "sha256": "3fdc560bb958dbbd5130a0114c9b96e2102dccf546aaa66b66fced3c5bbf48f3"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/status.json",
+      "sha256": "815372e728f69e2e1c3faeae87cfa4fe98a143d43c407125efea8e6f80761d9c"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_dino_context_s0/test_lock.json",
+      "sha256": "fad089cca7c5e605db53ddffbb92867f7daad80aa14e130ac342e8a81fc2f0c4"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/architecture.json",
+      "sha256": "6e014b51e4ad97e7c80921fe3d7034f701195aa996b02be375515a58fa104a9b"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/best_validation.json",
+      "sha256": "34e50bddac5e674d610929957b5cc9be7f8f0bb639a61eb7d75546c745af7a1d"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/config.json",
+      "sha256": "28dda99d206650e41dd472598fa585beae9767bb5b722e61b4669acce3eceff9"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/data_manifest.json",
+      "sha256": "8044bc6505e0a82b17faa538bb718b3d3df27d4a99586dbc4eefebdef0d79ddb"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/initialization.json",
+      "sha256": "a7138aa8008984606d252fa59cd63ad51829439f80af6e90f46492bd593fb49f"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/source_hashes.json",
+      "sha256": "3fdc560bb958dbbd5130a0114c9b96e2102dccf546aaa66b66fced3c5bbf48f3"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/status.json",
+      "sha256": "a8271c72da35eaf89907dbbf51b4a7b998c4f5fb133871d0bdca5f36ae070e00"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/auto_res_logs/runs/crack_context_local_refine_s0/test_lock.json",
+      "sha256": "d2bb77fa2b94b26f9357e05e7c6e90da14bab88c087aa33d5572edd3a1b3ec06"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/LICENSE",
+      "sha256": "8ec83bd3f23e209ae76095300e46409195be03435909bbeb51d340f46f47c1fa"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/config/template_topomortar.yaml",
+      "sha256": "13343a1730dc41da7fd6fef4bfbf93c4ca2f66f60e8fd627dcbce14816449224"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/dataset/dataset_types.txt",
+      "sha256": "801529b045e804c617d46024dbbebed1bd2d8c1a13e1e6173729610bb14b18ff"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/callback.py",
+      "sha256": "3e541c72a3eefa2b89c4a4fe34fc885d6379cb675f250fd2c3d32d15fccba355"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/core.py",
+      "sha256": "c9db4b3db697b816312805867a7c554f36ce176d2193e850598e61c08317ea72"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/data/TopoMortar.py",
+      "sha256": "bbddaf78bf79dd61ad6374f10a08b938d2aaecbe7d7bf661d1294f6406028882"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses.py",
+      "sha256": "5182c34c2a37945af79bd4323dc31b9a071e15e6a563d724cb7a66a482e2b1c1"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_bettimatching.py",
+      "sha256": "ff0007d9f840b70bbae11c79c4ca181e1c4454400ccf0a45a0b9bdf3076ce0b6"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_cbdice.py",
+      "sha256": "ec806cf95ec12db5546da08efaddc116f3c5dd2e1db502ddab8df93aa402f4d1"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_cldice.py",
+      "sha256": "4dfe9e4a3b1e66d50376715d7e0f6d6f7835167d205d6f6355a09f5869315675"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_skeletonrecallloss.py",
+      "sha256": "afe9261cdf177734112a9c57c86bd8d1910693989460f55c8df6b2c89a821a5c"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_topoloss.py",
+      "sha256": "4d12b4955cfc664179fc9425e63d51ed70b87206b72a8c4de84cfd253e09d128"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/losses_warping.py",
+      "sha256": "0145f335ed9def0c0ab2d8e22aad92b0c78621fa53a1cd5960f656e1d1e96b17"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/metrics.py",
+      "sha256": "46478b30f557752f040a20e165d79e109145729bae5386b9da2989acb7d2daa8"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/transforms.py",
+      "sha256": "42377bcaf672cff8ca2ae13426a0515951f813a67431936c0877f31d3f0878ec"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/lib/utils.py",
+      "sha256": "0fc3f183169b35f013c4eef4d905c766b2bc5fd33ce4147df57bd8ab6ab42acf"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/LICENSE",
+      "sha256": "498dc37e0adf880c19964696907b1fcb06bc29680c0f45b8e428f5321e7ef289"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/measure.py",
+      "sha256": "25ff8da248b16c4e03d3b4ccf1da78ac24c3f3f2e210eb2d1f4338bb95981411"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/pred.py",
+      "sha256": "b92c657266cd7ffb3032642b4cba36140895bb266c2cfd1b9ddcd0f8540df7e8"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/README.md",
+      "sha256": "4534be7ef155bd6dfc35aaff64e4b1837241b08809b0b63d41bf2ceac141a151"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/requirements.txt",
+      "sha256": "466a385a9e5cf9459f81f2a155b047e5106d32319e409f87e5e897e95f9c6adf"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/results/compute_tables.py",
+      "sha256": "9efc774631fd483817daeb1d60176a62c91e1615fc68136404ff52a10519a5ba"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/source_manifest.json",
+      "sha256": "df0854e2474141ea637888be9921e0b1b486190b14a7c321f3987b69e9bcd1ca"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/reference/train.py",
+      "sha256": "7d77ab9e85dc875eae1df745ef5344eaff180de97296ad68ce325de21ecd25c4"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/amodal_completion.py",
+      "sha256": "eb6415d2e9378c33baf63bc8e3a9792f3bd54a12dbf2a2cc0ff5e6338cfc750b"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/chroma_consistency.py",
+      "sha256": "7abbe89713341ad186a60342fa6d23f68974c2abbe156a7e88c015f41def33e3"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/conditional_budget.py",
+      "sha256": "7822fc9dc1024529e2003c8f4f6a6ee5fc73c30ae2a2d69673e6ab6619a630bd"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/context_residual.py",
+      "sha256": "ee4c09d04a3af33ac7849af3af77cbb4193c4cd5f1e4916dca79ba2c49e03832"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/convnext_unet.py",
+      "sha256": "e69150407d429c8b5144bb06a71e445a2d0fb30aebf2afcb36dec337dc155ca4"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/crack500_data.py",
+      "sha256": "91d92dfe9d172d1fd83daf1226e2d7f03de7ae1398922834b9411511b2b847a0"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/finalize_transfer.py",
+      "sha256": "dc2b3de8354bee14c8986b6320ef78b6c52b0622ff99813b2704374ab2cb68c9"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/innovations.py",
+      "sha256": "dd6385c592aed7687b1b4a3c06934fb2120790db711ff352aa15d5960ff5b671"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/losses.py",
+      "sha256": "037c5c23af9eac11be0b8d30698d72faf8a0684634944c17a892959e6bf2d212"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/mass_budget.py",
+      "sha256": "879b3054e8dc1d909b671576e41807f1145ca40889c545b01d7316896f7867ad"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/model.py",
+      "sha256": "d0004f10c09d2d3d092044a2777e46425c8b945e9b898649e67e5a328e5f1d3e"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/pretrained_unet.py",
+      "sha256": "c7aaf91b4326ebb05e2d2f3b0dc34e41f419f067d0e9118574a36f8e6fb9692e"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/test_mechanisms.py",
+      "sha256": "86a6fef5cc63298a3e9ec833bfc892b5de1b6f17f28e1728103a074796ab68ed"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/test_pretrained_unet.py",
+      "sha256": "6e8499cbf16e6f28201fabd5de2ddcff65a1f582fa80cc76f262f7dd1f4f9dfa"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/train.py",
+      "sha256": "380ed45aca2fea7715ff56f946f08553c01db7756bb37571e25904023356e1f9"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/train_crack500_context.py",
+      "sha256": "33e585d407ffab80f63e1c208d2483b500cfce89afcb89345d90767824bd088d"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/train_pretrained.py",
+      "sha256": "a0fa396d8830e58243bcefd53826149d77b3441b8c80f46f36e57db19854b73c"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/train_strong.py",
+      "sha256": "acaf6078ef68a186ac7752ec61265ab5b492ef7a1ff34175593f249da8120273"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/visibility_budget.py",
+      "sha256": "62ecf12d7d3d0559817083255734204b326481885b3a073bcc3911a7268d49b5"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/Detectron2/loss.py",
+      "sha256": "c42ed9c6d25799c87e47e965c42c3a2a2eea965bb27d00d9d2da588a3a67ada0"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/Detectron2/semantic_seg.py",
+      "sha256": "57287290a40017cf2c0adb89f2f1d23768467f2c47a8a6ada5f94a93974df29c"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/InstanSeg/compound_losses_scnp.py",
+      "sha256": "611be248a3a7ca958fcb15d09900a2b9e0e826ae7cca30e89f8a00bf47197ff3"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/InstanSeg/instanseg_loss.py",
+      "sha256": "1af106c0f939b54c05ca2129e3e0613c323c4d69daaaf5aec10fe0f99362ac40"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/nnUNetv2/compound_losses_scnp.py",
+      "sha256": "b57e803ce0ce817ce00b5f8ae8dbd2c0972679ba02365958041d7913505c15cc"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/nnUNetv2/nnUNetTrainerSCNPLoss.py",
+      "sha256": "fde5c79d2995cd42b997edfe4e1cecc868f1e94d2942c0024ff1a28c75cca232"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/experiments/README.md",
+      "sha256": "53db3e1719ca175331cb9679bf7d52b135d2447c6ea278ff33f5cfff1dbbc201"
+    },
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/SCNP/scnp_example.py",
+      "sha256": "6086f62bb4e08bed7d7638084c42a8720f233ad960e46ae9baf4032c1b01e3ac"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/architecture.json",
+      "sha256": "bbb999794b12fc3e59564011fbedfef53f6e6505233defac5d640c0faa68dad8"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/best_validation.json",
+      "sha256": "26416115df03f6424feaa65e34859693e7ee4de0c6fd44cfffb246f92beae5ae"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/config.json",
+      "sha256": "b6f8a349849a09483ee3c3908dbfb2850ecffbfdd53374ba23717cfa987ac464"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/data_manifest.json",
+      "sha256": "9e1f647ac3d5db0f5baba3d2cbf0723e2e6e1b0d6411088024a550a16ebaa7ff"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/initialization.json",
+      "sha256": "56e82b11471cd4247cb3f7734d3345d60180568264c4aae2c465d4eed203214b"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/source_hashes.json",
+      "sha256": "c8369e91af980fd3f6516cf475bda72d7d4cc987c6ea98c1adb5c28b356a4e2a"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/auto_res_logs/runs/topo_free_context_dino_context_s0/status.json",
+      "sha256": "1df384291f61f8124a3748bffb3f3d14b78088d88a442b7d1868aaf1913252a7"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/LICENSE",
+      "sha256": "8ec83bd3f23e209ae76095300e46409195be03435909bbeb51d340f46f47c1fa"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/config/template_topomortar.yaml",
+      "sha256": "13343a1730dc41da7fd6fef4bfbf93c4ca2f66f60e8fd627dcbce14816449224"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/dataset/dataset_types.txt",
+      "sha256": "801529b045e804c617d46024dbbebed1bd2d8c1a13e1e6173729610bb14b18ff"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/callback.py",
+      "sha256": "3e541c72a3eefa2b89c4a4fe34fc885d6379cb675f250fd2c3d32d15fccba355"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/core.py",
+      "sha256": "c9db4b3db697b816312805867a7c554f36ce176d2193e850598e61c08317ea72"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/data/TopoMortar.py",
+      "sha256": "bbddaf78bf79dd61ad6374f10a08b938d2aaecbe7d7bf661d1294f6406028882"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses.py",
+      "sha256": "5182c34c2a37945af79bd4323dc31b9a071e15e6a563d724cb7a66a482e2b1c1"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_bettimatching.py",
+      "sha256": "ff0007d9f840b70bbae11c79c4ca181e1c4454400ccf0a45a0b9bdf3076ce0b6"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_cbdice.py",
+      "sha256": "ec806cf95ec12db5546da08efaddc116f3c5dd2e1db502ddab8df93aa402f4d1"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_cldice.py",
+      "sha256": "4dfe9e4a3b1e66d50376715d7e0f6d6f7835167d205d6f6355a09f5869315675"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_skeletonrecallloss.py",
+      "sha256": "afe9261cdf177734112a9c57c86bd8d1910693989460f55c8df6b2c89a821a5c"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_topoloss.py",
+      "sha256": "4d12b4955cfc664179fc9425e63d51ed70b87206b72a8c4de84cfd253e09d128"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/losses_warping.py",
+      "sha256": "0145f335ed9def0c0ab2d8e22aad92b0c78621fa53a1cd5960f656e1d1e96b17"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/metrics.py",
+      "sha256": "46478b30f557752f040a20e165d79e109145729bae5386b9da2989acb7d2daa8"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/transforms.py",
+      "sha256": "42377bcaf672cff8ca2ae13426a0515951f813a67431936c0877f31d3f0878ec"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/lib/utils.py",
+      "sha256": "0fc3f183169b35f013c4eef4d905c766b2bc5fd33ce4147df57bd8ab6ab42acf"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/LICENSE",
+      "sha256": "498dc37e0adf880c19964696907b1fcb06bc29680c0f45b8e428f5321e7ef289"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/measure.py",
+      "sha256": "25ff8da248b16c4e03d3b4ccf1da78ac24c3f3f2e210eb2d1f4338bb95981411"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/pred.py",
+      "sha256": "b92c657266cd7ffb3032642b4cba36140895bb266c2cfd1b9ddcd0f8540df7e8"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/README.md",
+      "sha256": "4534be7ef155bd6dfc35aaff64e4b1837241b08809b0b63d41bf2ceac141a151"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/requirements.txt",
+      "sha256": "466a385a9e5cf9459f81f2a155b047e5106d32319e409f87e5e897e95f9c6adf"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/results/compute_tables.py",
+      "sha256": "9efc774631fd483817daeb1d60176a62c91e1615fc68136404ff52a10519a5ba"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/source_manifest.json",
+      "sha256": "df0854e2474141ea637888be9921e0b1b486190b14a7c321f3987b69e9bcd1ca"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/reference/train.py",
+      "sha256": "7d77ab9e85dc875eae1df745ef5344eaff180de97296ad68ce325de21ecd25c4"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/amodal_completion.py",
+      "sha256": "eb6415d2e9378c33baf63bc8e3a9792f3bd54a12dbf2a2cc0ff5e6338cfc750b"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/chroma_consistency.py",
+      "sha256": "7abbe89713341ad186a60342fa6d23f68974c2abbe156a7e88c015f41def33e3"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/conditional_budget.py",
+      "sha256": "7822fc9dc1024529e2003c8f4f6a6ee5fc73c30ae2a2d69673e6ab6619a630bd"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/context_residual.py",
+      "sha256": "81e66be54aeda9d9167e421f8f0209cb0df80092d5a19e866dc5884d15f82f55"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/convnext_unet.py",
+      "sha256": "e69150407d429c8b5144bb06a71e445a2d0fb30aebf2afcb36dec337dc155ca4"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/innovations.py",
+      "sha256": "dd6385c592aed7687b1b4a3c06934fb2120790db711ff352aa15d5960ff5b671"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/losses.py",
+      "sha256": "037c5c23af9eac11be0b8d30698d72faf8a0684634944c17a892959e6bf2d212"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/mass_budget.py",
+      "sha256": "879b3054e8dc1d909b671576e41807f1145ca40889c545b01d7316896f7867ad"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/model.py",
+      "sha256": "d0004f10c09d2d3d092044a2777e46425c8b945e9b898649e67e5a328e5f1d3e"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/pretrained_unet.py",
+      "sha256": "c7aaf91b4326ebb05e2d2f3b0dc34e41f419f067d0e9118574a36f8e6fb9692e"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/test_mechanisms.py",
+      "sha256": "86a6fef5cc63298a3e9ec833bfc892b5de1b6f17f28e1728103a074796ab68ed"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/test_pretrained_unet.py",
+      "sha256": "6e8499cbf16e6f28201fabd5de2ddcff65a1f582fa80cc76f262f7dd1f4f9dfa"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/train.py",
+      "sha256": "380ed45aca2fea7715ff56f946f08553c01db7756bb37571e25904023356e1f9"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/train_pretrained.py",
+      "sha256": "a0fa396d8830e58243bcefd53826149d77b3441b8c80f46f36e57db19854b73c"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/train_strong.py",
+      "sha256": "acaf6078ef68a186ac7752ec61265ab5b492ef7a1ff34175593f249da8120273"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/research/visibility_budget.py",
+      "sha256": "62ecf12d7d3d0559817083255734204b326481885b3a073bcc3911a7268d49b5"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/Detectron2/loss.py",
+      "sha256": "c42ed9c6d25799c87e47e965c42c3a2a2eea965bb27d00d9d2da588a3a67ada0"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/Detectron2/semantic_seg.py",
+      "sha256": "57287290a40017cf2c0adb89f2f1d23768467f2c47a8a6ada5f94a93974df29c"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/InstanSeg/compound_losses_scnp.py",
+      "sha256": "611be248a3a7ca958fcb15d09900a2b9e0e826ae7cca30e89f8a00bf47197ff3"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/InstanSeg/instanseg_loss.py",
+      "sha256": "1af106c0f939b54c05ca2129e3e0613c323c4d69daaaf5aec10fe0f99362ac40"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/nnUNetv2/compound_losses_scnp.py",
+      "sha256": "b57e803ce0ce817ce00b5f8ae8dbd2c0972679ba02365958041d7913505c15cc"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/nnUNetv2/nnUNetTrainerSCNPLoss.py",
+      "sha256": "fde5c79d2995cd42b997edfe4e1cecc868f1e94d2942c0024ff1a28c75cca232"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/experiments/README.md",
+      "sha256": "53db3e1719ca175331cb9679bf7d52b135d2447c6ea278ff33f5cfff1dbbc201"
+    },
+    {
+      "path": "exp_SCNP_topo_free_context_v8/SCNP/scnp_example.py",
+      "sha256": "6086f62bb4e08bed7d7638084c42a8720f233ad960e46ae9baf4032c1b01e3ac"
+    },
+    {
+      "path": "LOCALIZATION.json",
+      "sha256": "ac100837677c1e0c0b6227fb815d3c0d601e5a69b1ec052c109701d128a08541"
+    },
+    {
+      "path": "README.md",
+      "sha256": "792ba60c3bd59293cad262160c9048301dcf0eaabcf3b1ec3416e1e264f2a474"
+    },
+    {
+      "path": "requirements_core.txt",
+      "sha256": "76ef4e8050ee100a45b4e285f2f90d8ae3b36a7052ef4f14f33978c660913370"
+    },
+    {
+      "path": "results/Crack500_base.json",
+      "sha256": "5a83e05677b53c7693b01c2e33235f1e96fb64b6c28c226c4bf76d9078b4ca44"
+    },
+    {
+      "path": "results/Crack500_local.json",
+      "sha256": "fe4ef90032bfe6b792e943b9ae16b498197f3cfe633161471e6e0130ab6a5a09"
+    },
+    {
+      "path": "results/Crack500_ours.json",
+      "sha256": "178f91f33a4e29a378bd3d5f8d426312b68cad5bb3e5f7822461945bee6153d3"
+    },
+    {
+      "path": "results/TopoMortar_base.json",
+      "sha256": "cbe2168295f8cd1603aedce23c138c29edbca6fd35ab3f13ded4b6288d4498a9"
+    },
+    {
+      "path": "results/TopoMortar_local.json",
+      "sha256": "6c7cbde52c70454304a1648ba2ec396cea53449568f82212c36f999b52928a43"
+    },
+    {
+      "path": "results/TopoMortar_ours.json",
+      "sha256": "72fcfd267cf1603a2eb3f84b525902307a1b38a8ed4192cdc29725ad6f79b46b"
+    },
+    {
+      "path": "results/verified_main_results.json",
+      "sha256": "7d7f68dae5271161cb698b93c1df7080425338c0f7c6dacf8ee98463ee77a0f1"
+    },
+    {
+      "path": "scripts/download_icassp_dataset.py",
+      "sha256": "b45be10a0a7df3d68ea7fb20555f671874d446f00bdf262df7232f9f3f062564"
+    },
+    {
+      "path": "scripts/download_topomortar.py",
+      "sha256": "53c5df43818ba1536dcf92a0e5f9b8c7bcd4382fb61bf1ded138a157ecc3aae1"
+    },
+    {
+      "path": "scripts/evaluate_topo_free_context.py",
+      "sha256": "ab07d6fe968eadc5ebd2eee441dac7acc1241d18b4cda97e11e85397f35867bc"
+    },
+    {
+      "path": "scripts/gpu_guard.py",
+      "sha256": "3ad1cf4512e415db627fc8ae1374db2b48030f6fcea3b496921c8caf752ff6f9"
+    },
+    {
+      "path": "scripts/prepare_icassp_data.py",
+      "sha256": "e22fc7b34494893534095c81182ffe006f9ba5ad16f53c9da02e6dfddac7623a"
+    },
+    {
+      "path": "scripts/test_metrics.py",
+      "sha256": "2ab6a41695cf26b136a1033753b6f1eb1abec4e70409b85b0348ef95a21ea142"
+    },
+    {
+      "path": "verify_source.py",
+      "sha256": "399f128d54d1b70a348536426e552d9c0e671d1165b6252547af5c79780fe5f0"
+    }
+  ],
+  "release_note": "English documentation and report localization; archived experiment hashes and test locks remain unchanged. See LOCALIZATION.json."
+}

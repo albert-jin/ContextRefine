@@ -1,0 +1,3157 @@
+{
+  "source": "https://github.com/jmlipman/TopoMortar/tree/b1f31f20a41b20aa775c21078b2c432c6dcc26b4/results",
+  "source_commit": "b1f31f20a41b20aa775c21078b2c432c6dcc26b4",
+  "metric": "per-image foreground Dice then equal mean across10publishedruns",
+  "missing_data_note": "Some raw clDice cells are blank; clDice omitted from this audit, never imputed as zero. All350Dice and Betti entries per run required.",
+  "scope": "160 author-published runs, accurate labels/large50training, two augmentation settings; not a comprehensive global leaderboard",
+  "best_published_within_download": {
+    "ID": {
+      "configuration": "randhue/clDiceLoss",
+      "mean": 0.9130586574,
+      "sd_across_runs": 0.0004736093441940284
+    },
+    "OOD": {
+      "configuration": "randhue/CESkeletonRecallLoss",
+      "mean": 0.7487800411430007,
+      "sd_across_runs": 0.003701052509612503
+    }
+  },
+  "cohorts": {
+    "randhue/CEDiceLoss": {
+      "setting": "randhue",
+      "method": "CEDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9095405738,
+              "betti0": 1.8,
+              "betti1": 0.94
+            },
+            "OOD": {
+              "dice": 0.7444119143633333,
+              "betti0": 72.87666666666667,
+              "betti1": 53.53333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9090376663999999,
+              "betti0": 2.46,
+              "betti1": 2.4
+            },
+            "OOD": {
+              "dice": 0.7473901905833333,
+              "betti0": 68.76666666666667,
+              "betti1": 52.00333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9086586786,
+              "betti0": 1.54,
+              "betti1": 1.98
+            },
+            "OOD": {
+              "dice": 0.7472938774633333,
+              "betti0": 57.35,
+              "betti1": 44.09
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.909444664,
+              "betti0": 2.54,
+              "betti1": 1.44
+            },
+            "OOD": {
+              "dice": 0.7451687528100001,
+              "betti0": 74.31,
+              "betti1": 51.9
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9096307134,
+              "betti0": 2.5,
+              "betti1": 1.92
+            },
+            "OOD": {
+              "dice": 0.7409314299006666,
+              "betti0": 76.63666666666667,
+              "betti1": 57.71666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9093063782,
+              "betti0": 1.98,
+              "betti1": 2.42
+            },
+            "OOD": {
+              "dice": 0.7421517199633333,
+              "betti0": 76.38333333333334,
+              "betti1": 55.473333333333336
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9081798878,
+              "betti0": 1.4,
+              "betti1": 2.0
+            },
+            "OOD": {
+              "dice": 0.73635122187,
+              "betti0": 62.46666666666667,
+              "betti1": 48.586666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9082730168,
+              "betti0": 1.22,
+              "betti1": 1.56
+            },
+            "OOD": {
+              "dice": 0.7461368509466667,
+              "betti0": 70.02,
+              "betti1": 57.11333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9095550928,
+              "betti0": 1.26,
+              "betti1": 1.58
+            },
+            "OOD": {
+              "dice": 0.7439340304366666,
+              "betti0": 65.47333333333333,
+              "betti1": 49.21666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.909705179,
+              "betti0": 2.28,
+              "betti1": 3.66
+            },
+            "OOD": {
+              "dice": 0.7541084082033334,
+              "betti0": 73.04333333333334,
+              "betti1": 63.53666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CEDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.90913318508,
+            "sd_across_runs": 0.0005704426676111474
+          },
+          "betti0": {
+            "mean": 1.898,
+            "sd_across_runs": 0.5265780516167042
+          },
+          "betti1": {
+            "mean": 1.99,
+            "sd_across_runs": 0.73824115301167
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7447878396540667,
+            "sd_across_runs": 0.004663787601062099
+          },
+          "betti0": {
+            "mean": 69.73266666666667,
+            "sd_across_runs": 6.315559621548462
+          },
+          "betti1": {
+            "mean": 53.317,
+            "sd_across_runs": 5.48702812589119
+          }
+        }
+      }
+    },
+    "randhue/CESkeletonRecallLoss": {
+      "setting": "randhue",
+      "method": "CESkeletonRecallLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.909167808,
+              "betti0": 1.78,
+              "betti1": 1.54
+            },
+            "OOD": {
+              "dice": 0.7459086800066667,
+              "betti0": 70.82333333333334,
+              "betti1": 70.45666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9080048272,
+              "betti0": 2.02,
+              "betti1": 1.76
+            },
+            "OOD": {
+              "dice": 0.7496927909296667,
+              "betti0": 58.74,
+              "betti1": 56.31666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9078232852,
+              "betti0": 2.2,
+              "betti1": 1.96
+            },
+            "OOD": {
+              "dice": 0.75064209092,
+              "betti0": 63.06333333333333,
+              "betti1": 60.92333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9099133382,
+              "betti0": 2.84,
+              "betti1": 1.52
+            },
+            "OOD": {
+              "dice": 0.75073017076,
+              "betti0": 71.05,
+              "betti1": 63.653333333333336
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9094903752,
+              "betti0": 2.64,
+              "betti1": 1.68
+            },
+            "OOD": {
+              "dice": 0.7437465713403401,
+              "betti0": 67.53666666666666,
+              "betti1": 68.73666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9087494462,
+              "betti0": 1.26,
+              "betti1": 1.22
+            },
+            "OOD": {
+              "dice": 0.7497744785766667,
+              "betti0": 69.31,
+              "betti1": 56.81
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9089410322,
+              "betti0": 1.92,
+              "betti1": 2.42
+            },
+            "OOD": {
+              "dice": 0.74436908905,
+              "betti0": 59.163333333333334,
+              "betti1": 58.49666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9079355388,
+              "betti0": 1.46,
+              "betti1": 3.74
+            },
+            "OOD": {
+              "dice": 0.7459197406933333,
+              "betti0": 60.623333333333335,
+              "betti1": 65.21333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.908866148,
+              "betti0": 1.56,
+              "betti1": 2.52
+            },
+            "OOD": {
+              "dice": 0.7514768044866666,
+              "betti0": 62.016666666666666,
+              "betti1": 57.9
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.908437663,
+              "betti0": 2.28,
+              "betti1": 1.72
+            },
+            "OOD": {
+              "dice": 0.7555399946666667,
+              "betti0": 72.31333333333333,
+              "betti1": 68.73
+            }
+          },
+          "source_path": "results/randhue/accurate/large/CESkeletonRecallLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9087329462,
+            "sd_across_runs": 0.0006910647698043324
+          },
+          "betti0": {
+            "mean": 1.996,
+            "sd_across_runs": 0.5078757503344472
+          },
+          "betti1": {
+            "mean": 2.008,
+            "sd_across_runs": 0.7275651937188249
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7487800411430007,
+            "sd_across_runs": 0.003701052509612503
+          },
+          "betti0": {
+            "mean": 65.464,
+            "sd_across_runs": 5.290629218804148
+          },
+          "betti1": {
+            "mean": 62.72366666666667,
+            "sd_across_runs": 5.36958316197201
+          }
+        }
+      }
+    },
+    "randhue/MSETopoWinLoss": {
+      "setting": "randhue",
+      "method": "MSETopoWinLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.8641623444000001,
+              "betti0": 22.1,
+              "betti1": 46.18
+            },
+            "OOD": {
+              "dice": 0.7350587375,
+              "betti0": 86.3,
+              "betti1": 46.48
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.8639605374,
+              "betti0": 20.48,
+              "betti1": 40.1
+            },
+            "OOD": {
+              "dice": 0.7146329594466667,
+              "betti0": 83.7,
+              "betti1": 52.733333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.8612781252,
+              "betti0": 19.42,
+              "betti1": 44.62
+            },
+            "OOD": {
+              "dice": 0.7212101793,
+              "betti0": 98.96,
+              "betti1": 43.6
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.857622767,
+              "betti0": 16.96,
+              "betti1": 36.08
+            },
+            "OOD": {
+              "dice": 0.7076930837,
+              "betti0": 108.06,
+              "betti1": 53.53666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.8686569188,
+              "betti0": 17.6,
+              "betti1": 39.12
+            },
+            "OOD": {
+              "dice": 0.7233385252,
+              "betti0": 92.09,
+              "betti1": 47.69
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.8665978994,
+              "betti0": 19.8,
+              "betti1": 39.46
+            },
+            "OOD": {
+              "dice": 0.7162949078466667,
+              "betti0": 98.45333333333333,
+              "betti1": 52.013333333333335
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.8646221704,
+              "betti0": 19.12,
+              "betti1": 39.06
+            },
+            "OOD": {
+              "dice": 0.7138553906333334,
+              "betti0": 104.97333333333333,
+              "betti1": 51.27333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.8556584892,
+              "betti0": 21.22,
+              "betti1": 41.76
+            },
+            "OOD": {
+              "dice": 0.7135079907866667,
+              "betti0": 97.74666666666667,
+              "betti1": 45.68333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.8604048894,
+              "betti0": 21.18,
+              "betti1": 39.6
+            },
+            "OOD": {
+              "dice": 0.7177296421833333,
+              "betti0": 113.14,
+              "betti1": 63.56666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.8640371552,
+              "betti0": 19.26,
+              "betti1": 39.64
+            },
+            "OOD": {
+              "dice": 0.7246999468666667,
+              "betti0": 88.97666666666667,
+              "betti1": 42.56666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/MSETopoWinLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.86270012964,
+            "sd_across_runs": 0.003979657436495632
+          },
+          "betti0": {
+            "mean": 19.714000000000002,
+            "sd_across_runs": 1.6125631770569484
+          },
+          "betti1": {
+            "mean": 40.562,
+            "sd_across_runs": 2.9267266508659273
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7188021363463334,
+            "sd_across_runs": 0.007646106781714875
+          },
+          "betti0": {
+            "mean": 97.24,
+            "sd_across_runs": 9.61592724546746
+          },
+          "betti1": {
+            "mean": 49.91433333333333,
+            "sd_across_runs": 6.166302902183892
+          }
+        }
+      }
+    },
+    "randhue/RegionWiseLoss": {
+      "setting": "randhue",
+      "method": "RegionWiseLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9105668564,
+              "betti0": 2.92,
+              "betti1": 3.02
+            },
+            "OOD": {
+              "dice": 0.7201608146608,
+              "betti0": 54.89666666666667,
+              "betti1": 46.403333333333336
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9112743434,
+              "betti0": 3.66,
+              "betti1": 2.8
+            },
+            "OOD": {
+              "dice": 0.7208260603894333,
+              "betti0": 64.57666666666667,
+              "betti1": 54.78333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9098028802,
+              "betti0": 3.6,
+              "betti1": 2.22
+            },
+            "OOD": {
+              "dice": 0.71563410917,
+              "betti0": 61.89666666666667,
+              "betti1": 44.24333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9106301,
+              "betti0": 3.76,
+              "betti1": 4.22
+            },
+            "OOD": {
+              "dice": 0.7253855890495666,
+              "betti0": 70.86,
+              "betti1": 53.38
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9106379768,
+              "betti0": 3.02,
+              "betti1": 2.78
+            },
+            "OOD": {
+              "dice": 0.7170936775076666,
+              "betti0": 52.21333333333333,
+              "betti1": 47.12
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9110409832,
+              "betti0": 2.54,
+              "betti1": 2.4
+            },
+            "OOD": {
+              "dice": 0.7103603625122333,
+              "betti0": 61.68666666666667,
+              "betti1": 54.71333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.910464399,
+              "betti0": 3.06,
+              "betti1": 2.6
+            },
+            "OOD": {
+              "dice": 0.7189511895566667,
+              "betti0": 64.14,
+              "betti1": 48.64
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9096101658,
+              "betti0": 3.08,
+              "betti1": 2.58
+            },
+            "OOD": {
+              "dice": 0.7195238744596667,
+              "betti0": 67.6,
+              "betti1": 49.843333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9109156516,
+              "betti0": 3.76,
+              "betti1": 3.38
+            },
+            "OOD": {
+              "dice": 0.712522646914,
+              "betti0": 68.37333333333333,
+              "betti1": 47.803333333333335
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9111468394,
+              "betti0": 3.56,
+              "betti1": 3.26
+            },
+            "OOD": {
+              "dice": 0.7160040008233334,
+              "betti0": 61.29666666666667,
+              "betti1": 51.486666666666665
+            }
+          },
+          "source_path": "results/randhue/accurate/large/RegionWiseLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.91060901958,
+            "sd_across_runs": 0.0005461040838266091
+          },
+          "betti0": {
+            "mean": 3.296,
+            "sd_across_runs": 0.4238238627857882
+          },
+          "betti1": {
+            "mean": 2.926,
+            "sd_across_runs": 0.5811138729486099
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7176462325043367,
+            "sd_across_runs": 0.004319804957400431
+          },
+          "betti0": {
+            "mean": 62.754,
+            "sd_across_runs": 5.800884521740447
+          },
+          "betti1": {
+            "mean": 49.84166666666667,
+            "sd_across_runs": 3.644612208198308
+          }
+        }
+      }
+    },
+    "randhue/TopoLoss": {
+      "setting": "randhue",
+      "method": "TopoLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9108558282,
+              "betti0": 3.82,
+              "betti1": 3.52
+            },
+            "OOD": {
+              "dice": 0.7424030629866667,
+              "betti0": 73.22666666666667,
+              "betti1": 72.73666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9099805184,
+              "betti0": 2.72,
+              "betti1": 5.68
+            },
+            "OOD": {
+              "dice": 0.749157483129,
+              "betti0": 78.09666666666666,
+              "betti1": 69.64
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9102332474,
+              "betti0": 1.82,
+              "betti1": 1.6
+            },
+            "OOD": {
+              "dice": 0.7387628804096333,
+              "betti0": 81.52,
+              "betti1": 68.12333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9095538982,
+              "betti0": 3.32,
+              "betti1": 2.8
+            },
+            "OOD": {
+              "dice": 0.7471575933433333,
+              "betti0": 86.22,
+              "betti1": 66.28
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.910834946,
+              "betti0": 2.7,
+              "betti1": 3.16
+            },
+            "OOD": {
+              "dice": 0.72998508532,
+              "betti0": 95.46333333333334,
+              "betti1": 112.06666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9102867374,
+              "betti0": 2.44,
+              "betti1": 4.38
+            },
+            "OOD": {
+              "dice": 0.7431425663533333,
+              "betti0": 90.73333333333333,
+              "betti1": 75.75
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9107234406,
+              "betti0": 2.42,
+              "betti1": 2.18
+            },
+            "OOD": {
+              "dice": 0.7372337134333333,
+              "betti0": 91.09,
+              "betti1": 80.85666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9106707798,
+              "betti0": 2.96,
+              "betti1": 3.52
+            },
+            "OOD": {
+              "dice": 0.7412642208733333,
+              "betti0": 91.04333333333334,
+              "betti1": 92.44666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9117285386,
+              "betti0": 3.9,
+              "betti1": 2.5
+            },
+            "OOD": {
+              "dice": 0.7405779014,
+              "betti0": 80.14333333333333,
+              "betti1": 79.88
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.909435591,
+              "betti0": 2.56,
+              "betti1": 4.08
+            },
+            "OOD": {
+              "dice": 0.74235923474,
+              "betti0": 85.00666666666666,
+              "betti1": 83.15333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/TopoLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.91043035256,
+            "sd_across_runs": 0.0006825823157116382
+          },
+          "betti0": {
+            "mean": 2.866,
+            "sd_across_runs": 0.6507465797920962
+          },
+          "betti1": {
+            "mean": 3.342,
+            "sd_across_runs": 1.1819174628073184
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7412043741988633,
+            "sd_across_runs": 0.005304248170844328
+          },
+          "betti0": {
+            "mean": 85.25433333333334,
+            "sd_across_runs": 6.982271385709933
+          },
+          "betti1": {
+            "mean": 80.09333333333333,
+            "sd_across_runs": 13.748684875378776
+          }
+        }
+      }
+    },
+    "randhue/WarpingLoss": {
+      "setting": "randhue",
+      "method": "WarpingLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9111229992000001,
+              "betti0": 2.2,
+              "betti1": 1.6
+            },
+            "OOD": {
+              "dice": 0.7369836938033333,
+              "betti0": 51.3,
+              "betti1": 38.67333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9108682964,
+              "betti0": 2.72,
+              "betti1": 2.76
+            },
+            "OOD": {
+              "dice": 0.73519501663,
+              "betti0": 58.07666666666667,
+              "betti1": 42.903333333333336
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9109877924,
+              "betti0": 2.94,
+              "betti1": 1.6
+            },
+            "OOD": {
+              "dice": 0.7306633118265666,
+              "betti0": 59.54,
+              "betti1": 41.586666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9111731904,
+              "betti0": 2.96,
+              "betti1": 2.26
+            },
+            "OOD": {
+              "dice": 0.7402338428366667,
+              "betti0": 61.41,
+              "betti1": 41.223333333333336
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9101506312,
+              "betti0": 2.06,
+              "betti1": 1.84
+            },
+            "OOD": {
+              "dice": 0.7318030338433333,
+              "betti0": 49.45666666666666,
+              "betti1": 36.74333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9117159592,
+              "betti0": 2.26,
+              "betti1": 1.74
+            },
+            "OOD": {
+              "dice": 0.7325466619333333,
+              "betti0": 57.50666666666667,
+              "betti1": 37.47
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9113919344,
+              "betti0": 2.66,
+              "betti1": 1.76
+            },
+            "OOD": {
+              "dice": 0.7364140576482333,
+              "betti0": 58.93,
+              "betti1": 41.873333333333335
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.910501268,
+              "betti0": 2.26,
+              "betti1": 1.38
+            },
+            "OOD": {
+              "dice": 0.7314457034805933,
+              "betti0": 61.39666666666667,
+              "betti1": 39.876666666666665
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9114974264,
+              "betti0": 2.56,
+              "betti1": 2.18
+            },
+            "OOD": {
+              "dice": 0.73014789088,
+              "betti0": 58.053333333333335,
+              "betti1": 40.373333333333335
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9111426122,
+              "betti0": 2.4,
+              "betti1": 1.66
+            },
+            "OOD": {
+              "dice": 0.7362999872433333,
+              "betti0": 55.03333333333333,
+              "betti1": 39.43333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/WarpingLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.91105521098,
+            "sd_across_runs": 0.00046383407446213485
+          },
+          "betti0": {
+            "mean": 2.502,
+            "sd_across_runs": 0.3147415165214501
+          },
+          "betti1": {
+            "mean": 1.878,
+            "sd_across_runs": 0.40818840965634695
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7341733200125393,
+            "sd_across_runs": 0.0033240541265990562
+          },
+          "betti0": {
+            "mean": 57.07033333333333,
+            "sd_across_runs": 4.009584335465446
+          },
+          "betti1": {
+            "mean": 40.01566666666667,
+            "sd_across_runs": 1.9774519394512504
+          }
+        }
+      }
+    },
+    "randhue/cbDiceLoss": {
+      "setting": "randhue",
+      "method": "cbDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9115776192,
+              "betti0": 2.42,
+              "betti1": 2.72
+            },
+            "OOD": {
+              "dice": 0.7387170876,
+              "betti0": 83.53333333333333,
+              "betti1": 80.01
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9112273812,
+              "betti0": 2.74,
+              "betti1": 3.76
+            },
+            "OOD": {
+              "dice": 0.74787211559,
+              "betti0": 79.17666666666666,
+              "betti1": 72.58
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.910641126,
+              "betti0": 2.42,
+              "betti1": 2.38
+            },
+            "OOD": {
+              "dice": 0.7326846064758333,
+              "betti0": 84.41666666666667,
+              "betti1": 79.06
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9104748514,
+              "betti0": 2.8,
+              "betti1": 4.24
+            },
+            "OOD": {
+              "dice": 0.7459528065033333,
+              "betti0": 96.20666666666666,
+              "betti1": 78.81333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.911434683,
+              "betti0": 2.54,
+              "betti1": 3.5
+            },
+            "OOD": {
+              "dice": 0.7296176230433333,
+              "betti0": 92.35,
+              "betti1": 94.21333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9117693966,
+              "betti0": 2.72,
+              "betti1": 3.52
+            },
+            "OOD": {
+              "dice": 0.74260636027,
+              "betti0": 98.05,
+              "betti1": 82.24333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9109789428,
+              "betti0": 3.28,
+              "betti1": 2.14
+            },
+            "OOD": {
+              "dice": 0.731406270565,
+              "betti0": 95.71,
+              "betti1": 81.48
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9104756792,
+              "betti0": 2.62,
+              "betti1": 3.7
+            },
+            "OOD": {
+              "dice": 0.7359049543033334,
+              "betti0": 98.08333333333333,
+              "betti1": 102.07
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9117462564,
+              "betti0": 2.78,
+              "betti1": 3.74
+            },
+            "OOD": {
+              "dice": 0.7346918872433333,
+              "betti0": 84.55,
+              "betti1": 78.24
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9106085916,
+              "betti0": 2.74,
+              "betti1": 3.2
+            },
+            "OOD": {
+              "dice": 0.7401852526566667,
+              "betti0": 90.56666666666666,
+              "betti1": 83.51666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/cbDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.91109345274,
+            "sd_across_runs": 0.0005237640371856903
+          },
+          "betti0": {
+            "mean": 2.706,
+            "sd_across_runs": 0.24604425979440722
+          },
+          "betti1": {
+            "mean": 3.29,
+            "sd_across_runs": 0.6728546153020973
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7379638964250833,
+            "sd_across_runs": 0.006187160609425856
+          },
+          "betti0": {
+            "mean": 90.26433333333333,
+            "sd_across_runs": 6.881964450021375
+          },
+          "betti1": {
+            "mean": 83.22266666666667,
+            "sd_across_runs": 8.597698055401331
+          }
+        }
+      }
+    },
+    "randhue/clDiceLoss": {
+      "setting": "randhue",
+      "method": "clDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9126511628,
+              "betti0": 0.48,
+              "betti1": 0.9
+            },
+            "OOD": {
+              "dice": 0.7357665257133333,
+              "betti0": 14.156666666666666,
+              "betti1": 14.643333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.912859916,
+              "betti0": 0.6,
+              "betti1": 0.88
+            },
+            "OOD": {
+              "dice": 0.7374844797166666,
+              "betti0": 16.286666666666665,
+              "betti1": 15.22
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9130588494,
+              "betti0": 0.6,
+              "betti1": 1.02
+            },
+            "OOD": {
+              "dice": 0.7392015725456667,
+              "betti0": 16.616666666666667,
+              "betti1": 15.453333333333333
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.913391521,
+              "betti0": 0.52,
+              "betti1": 1.0
+            },
+            "OOD": {
+              "dice": 0.740918618089,
+              "betti0": 15.763333333333334,
+              "betti1": 16.163333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9121380674,
+              "betti0": 0.64,
+              "betti1": 0.92
+            },
+            "OOD": {
+              "dice": 0.730386151799,
+              "betti0": 16.316666666666666,
+              "betti1": 14.05
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9127337746,
+              "betti0": 0.4,
+              "betti1": 0.98
+            },
+            "OOD": {
+              "dice": 0.73482288439,
+              "betti0": 14.556666666666667,
+              "betti1": 12.58
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9131772852,
+              "betti0": 0.62,
+              "betti1": 1.0
+            },
+            "OOD": {
+              "dice": 0.7331394647986667,
+              "betti0": 18.203333333333333,
+              "betti1": 14.433333333333334
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9132941876,
+              "betti0": 0.56,
+              "betti1": 1.0
+            },
+            "OOD": {
+              "dice": 0.7312566711286667,
+              "betti0": 18.51,
+              "betti1": 18.513333333333332
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9136708862,
+              "betti0": 0.64,
+              "betti1": 0.88
+            },
+            "OOD": {
+              "dice": 0.7337320563833334,
+              "betti0": 18.5,
+              "betti1": 14.956666666666667
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9136109238,
+              "betti0": 0.56,
+              "betti1": 0.96
+            },
+            "OOD": {
+              "dice": 0.7335958013933334,
+              "betti0": 16.44,
+              "betti1": 15.156666666666666
+            }
+          },
+          "source_path": "results/randhue/accurate/large/clDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9130586574,
+            "sd_across_runs": 0.0004736093441940284
+          },
+          "betti0": {
+            "mean": 0.562,
+            "sd_across_runs": 0.07685484153042452
+          },
+          "betti1": {
+            "mean": 0.954,
+            "sd_across_runs": 0.05420127099780758
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.7350304225957667,
+            "sd_across_runs": 0.003363310536855009
+          },
+          "betti0": {
+            "mean": 16.535,
+            "sd_across_runs": 1.5215474984776052
+          },
+          "betti1": {
+            "mean": 15.117,
+            "sd_across_runs": 1.5292525810964395
+          }
+        }
+      }
+    },
+    "supervised/CEDiceLoss": {
+      "setting": "supervised",
+      "method": "CEDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.905134184,
+              "betti0": 3.2,
+              "betti1": 2.26
+            },
+            "OOD": {
+              "dice": 0.654974309388,
+              "betti0": 220.43333333333334,
+              "betti1": 116.76666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9067512662,
+              "betti0": 3.72,
+              "betti1": 1.88
+            },
+            "OOD": {
+              "dice": 0.6575580140333334,
+              "betti0": 170.51666666666668,
+              "betti1": 82.89333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9054226374,
+              "betti0": 2.9,
+              "betti1": 2.08
+            },
+            "OOD": {
+              "dice": 0.65534834313,
+              "betti0": 239.31,
+              "betti1": 81.53666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9062740402,
+              "betti0": 2.98,
+              "betti1": 1.92
+            },
+            "OOD": {
+              "dice": 0.65380747899,
+              "betti0": 192.82666666666665,
+              "betti1": 79.34
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9056994462,
+              "betti0": 4.38,
+              "betti1": 1.94
+            },
+            "OOD": {
+              "dice": 0.652261203914,
+              "betti0": 200.43333333333334,
+              "betti1": 85.47
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9066527818,
+              "betti0": 3.0,
+              "betti1": 2.04
+            },
+            "OOD": {
+              "dice": 0.6377069802866666,
+              "betti0": 215.46,
+              "betti1": 73.49666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9072425004,
+              "betti0": 2.78,
+              "betti1": 2.04
+            },
+            "OOD": {
+              "dice": 0.6438829633583333,
+              "betti0": 171.34666666666666,
+              "betti1": 75.21
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9056570278,
+              "betti0": 3.1,
+              "betti1": 2.88
+            },
+            "OOD": {
+              "dice": 0.657200825035,
+              "betti0": 183.95333333333335,
+              "betti1": 120.68
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9054918614,
+              "betti0": 3.2,
+              "betti1": 1.84
+            },
+            "OOD": {
+              "dice": 0.6677008250800001,
+              "betti0": 178.51666666666668,
+              "betti1": 69.73
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9056682362,
+              "betti0": 3.88,
+              "betti1": 2.46
+            },
+            "OOD": {
+              "dice": 0.6625570015366666,
+              "betti0": 199.74333333333334,
+              "betti1": 92.96333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CEDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.90599939816,
+            "sd_across_runs": 0.0006886900709945583
+          },
+          "betti0": {
+            "mean": 3.314,
+            "sd_across_runs": 0.5120807228032185
+          },
+          "betti1": {
+            "mean": 2.134,
+            "sd_across_runs": 0.3220834950409253
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6542997944752,
+            "sd_across_runs": 0.008541308555741133
+          },
+          "betti0": {
+            "mean": 197.25400000000002,
+            "sd_across_runs": 22.57684063015696
+          },
+          "betti1": {
+            "mean": 87.80866666666667,
+            "sd_across_runs": 17.56494300349561
+          }
+        }
+      }
+    },
+    "supervised/CESkeletonRecallLoss": {
+      "setting": "supervised",
+      "method": "CESkeletonRecallLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9056741642,
+              "betti0": 2.92,
+              "betti1": 1.6
+            },
+            "OOD": {
+              "dice": 0.6726969144833334,
+              "betti0": 218.67666666666668,
+              "betti1": 131.89333333333335
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9064407042,
+              "betti0": 2.9,
+              "betti1": 1.54
+            },
+            "OOD": {
+              "dice": 0.66746609986,
+              "betti0": 151.01,
+              "betti1": 100.93666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9063793302,
+              "betti0": 3.72,
+              "betti1": 1.48
+            },
+            "OOD": {
+              "dice": 0.6744694510833333,
+              "betti0": 193.01333333333332,
+              "betti1": 90.76
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9052349789999999,
+              "betti0": 3.28,
+              "betti1": 1.66
+            },
+            "OOD": {
+              "dice": 0.66352356456,
+              "betti0": 235.71333333333334,
+              "betti1": 85.35333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.906696953,
+              "betti0": 2.54,
+              "betti1": 2.18
+            },
+            "OOD": {
+              "dice": 0.6672801250266667,
+              "betti0": 190.63666666666666,
+              "betti1": 107.12666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.906682111,
+              "betti0": 3.12,
+              "betti1": 1.84
+            },
+            "OOD": {
+              "dice": 0.65987992201,
+              "betti0": 180.92666666666668,
+              "betti1": 83.62333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.907173272,
+              "betti0": 3.26,
+              "betti1": 1.84
+            },
+            "OOD": {
+              "dice": 0.6660399116566666,
+              "betti0": 163.71666666666667,
+              "betti1": 95.35666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9069822874,
+              "betti0": 2.78,
+              "betti1": 1.74
+            },
+            "OOD": {
+              "dice": 0.6725887561366667,
+              "betti0": 155.48,
+              "betti1": 102.82
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9055770502,
+              "betti0": 2.98,
+              "betti1": 1.84
+            },
+            "OOD": {
+              "dice": 0.67257879824,
+              "betti0": 155.04,
+              "betti1": 67.51
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9052691478,
+              "betti0": 3.26,
+              "betti1": 1.62
+            },
+            "OOD": {
+              "dice": 0.6724420489697334,
+              "betti0": 158.12,
+              "betti1": 102.48333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/CESkeletonRecallLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9062109999,
+            "sd_across_runs": 0.0007141299452099267
+          },
+          "betti0": {
+            "mean": 3.076,
+            "sd_across_runs": 0.3275226879333875
+          },
+          "betti1": {
+            "mean": 1.734,
+            "sd_across_runs": 0.2030982247310126
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.66889655920264,
+            "sd_across_runs": 0.004810288171796211
+          },
+          "betti0": {
+            "mean": 180.23333333333332,
+            "sd_across_runs": 29.233149541210327
+          },
+          "betti1": {
+            "mean": 96.78633333333333,
+            "sd_across_runs": 17.078096899353387
+          }
+        }
+      }
+    },
+    "supervised/MSETopoWinLoss": {
+      "setting": "supervised",
+      "method": "MSETopoWinLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.8509828984,
+              "betti0": 45.88,
+              "betti1": 51.2
+            },
+            "OOD": {
+              "dice": 0.643069841969,
+              "betti0": 104.24333333333334,
+              "betti1": 83.52666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.8606026588,
+              "betti0": 31.26,
+              "betti1": 42.32
+            },
+            "OOD": {
+              "dice": 0.6507307124566667,
+              "betti0": 95.43333333333334,
+              "betti1": 97.26333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.8616519272000001,
+              "betti0": 34.6,
+              "betti1": 48.82
+            },
+            "OOD": {
+              "dice": 0.65486643698,
+              "betti0": 116.89333333333333,
+              "betti1": 89.43
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.8618209586,
+              "betti0": 30.16,
+              "betti1": 44.74
+            },
+            "OOD": {
+              "dice": 0.6562723872666667,
+              "betti0": 109.12666666666667,
+              "betti1": 98.74
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.8598349422,
+              "betti0": 34.22,
+              "betti1": 46.86
+            },
+            "OOD": {
+              "dice": 0.64405214508,
+              "betti0": 110.24333333333334,
+              "betti1": 86.81
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.8620055804,
+              "betti0": 31.84,
+              "betti1": 40.7
+            },
+            "OOD": {
+              "dice": 0.657621420722,
+              "betti0": 112.28666666666666,
+              "betti1": 107.46666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.8643001666,
+              "betti0": 20.82,
+              "betti1": 23.6
+            },
+            "OOD": {
+              "dice": 0.6665958030493333,
+              "betti0": 107.60333333333334,
+              "betti1": 142.57333333333332
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.8498985232,
+              "betti0": 36.52,
+              "betti1": 46.2
+            },
+            "OOD": {
+              "dice": 0.649721308505,
+              "betti0": 113.34333333333333,
+              "betti1": 100.72333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.8571747202,
+              "betti0": 40.16,
+              "betti1": 45.92
+            },
+            "OOD": {
+              "dice": 0.6454507450333333,
+              "betti0": 159.38,
+              "betti1": 145.94333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.8554952932,
+              "betti0": 31.44,
+              "betti1": 43.12
+            },
+            "OOD": {
+              "dice": 0.6631211778533334,
+              "betti0": 148.77333333333334,
+              "betti1": 98.4
+            }
+          },
+          "source_path": "results/supervised/accurate/large/MSETopoWinLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.85837676688,
+            "sd_across_runs": 0.004878782491809217
+          },
+          "betti0": {
+            "mean": 33.69,
+            "sd_across_runs": 6.600190232948677
+          },
+          "betti1": {
+            "mean": 43.348,
+            "sd_across_runs": 7.591821330294273
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6531501978915333,
+            "sd_across_runs": 0.007987288673312245
+          },
+          "betti0": {
+            "mean": 117.73266666666667,
+            "sd_across_runs": 20.164964470555493
+          },
+          "betti1": {
+            "mean": 105.08766666666666,
+            "sd_across_runs": 21.83121629826722
+          }
+        }
+      }
+    },
+    "supervised/RegionWiseLoss": {
+      "setting": "supervised",
+      "method": "RegionWiseLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9102033848,
+              "betti0": 6.06,
+              "betti1": 6.18
+            },
+            "OOD": {
+              "dice": 0.6435312551066666,
+              "betti0": 263.19666666666666,
+              "betti1": 112.43666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.910693934,
+              "betti0": 5.2,
+              "betti1": 5.96
+            },
+            "OOD": {
+              "dice": 0.64367464106,
+              "betti0": 220.71,
+              "betti1": 91.88666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.910413232,
+              "betti0": 5.78,
+              "betti1": 5.64
+            },
+            "OOD": {
+              "dice": 0.6451633630583333,
+              "betti0": 253.72666666666666,
+              "betti1": 114.01
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.910279664,
+              "betti0": 5.94,
+              "betti1": 5.88
+            },
+            "OOD": {
+              "dice": 0.6443562366566666,
+              "betti0": 156.65333333333334,
+              "betti1": 75.18666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9096196456,
+              "betti0": 6.62,
+              "betti1": 7.16
+            },
+            "OOD": {
+              "dice": 0.63721012642,
+              "betti0": 171.23,
+              "betti1": 82.51
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9105997488,
+              "betti0": 5.44,
+              "betti1": 4.84
+            },
+            "OOD": {
+              "dice": 0.6315395200633334,
+              "betti0": 179.26,
+              "betti1": 69.53666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9110171386,
+              "betti0": 5.3,
+              "betti1": 6.52
+            },
+            "OOD": {
+              "dice": 0.6416623059593334,
+              "betti0": 190.65666666666667,
+              "betti1": 68.09666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9108976892,
+              "betti0": 5.1,
+              "betti1": 6.02
+            },
+            "OOD": {
+              "dice": 0.6264026305073334,
+              "betti0": 237.52,
+              "betti1": 81.32
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.910060942,
+              "betti0": 5.9,
+              "betti1": 6.92
+            },
+            "OOD": {
+              "dice": 0.6477998005433333,
+              "betti0": 240.55666666666667,
+              "betti1": 94.46
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.910167285,
+              "betti0": 5.82,
+              "betti1": 5.16
+            },
+            "OOD": {
+              "dice": 0.638680651398,
+              "betti0": 282.0233333333333,
+              "betti1": 87.93333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/RegionWiseLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9103952664,
+            "sd_across_runs": 0.00041978966491882595
+          },
+          "betti0": {
+            "mean": 5.716,
+            "sd_across_runs": 0.4630142786375192
+          },
+          "betti1": {
+            "mean": 6.028,
+            "sd_across_runs": 0.7214306773503759
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6400020530773,
+            "sd_across_runs": 0.0066766777009479505
+          },
+          "betti0": {
+            "mean": 219.55333333333334,
+            "sd_across_runs": 42.80506428444024
+          },
+          "betti1": {
+            "mean": 87.73766666666667,
+            "sd_across_runs": 16.006270225858675
+          }
+        }
+      }
+    },
+    "supervised/TopoLoss": {
+      "setting": "supervised",
+      "method": "TopoLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9072064718,
+              "betti0": 3.14,
+              "betti1": 2.44
+            },
+            "OOD": {
+              "dice": 0.65385930534,
+              "betti0": 177.77333333333334,
+              "betti1": 127.0
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9081616028,
+              "betti0": 2.72,
+              "betti1": 2.24
+            },
+            "OOD": {
+              "dice": 0.65174899372,
+              "betti0": 171.65666666666667,
+              "betti1": 94.08
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9078580486,
+              "betti0": 3.2,
+              "betti1": 2.42
+            },
+            "OOD": {
+              "dice": 0.65197359071,
+              "betti0": 226.29666666666665,
+              "betti1": 100.08333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9067697992,
+              "betti0": 2.8,
+              "betti1": 2.68
+            },
+            "OOD": {
+              "dice": 0.65265047509,
+              "betti0": 188.74333333333334,
+              "betti1": 77.61333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9075819222,
+              "betti0": 3.22,
+              "betti1": 3.4
+            },
+            "OOD": {
+              "dice": 0.6555154377476666,
+              "betti0": 206.81666666666666,
+              "betti1": 118.66333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.907424486,
+              "betti0": 3.3,
+              "betti1": 1.98
+            },
+            "OOD": {
+              "dice": 0.626698149535,
+              "betti0": 210.57,
+              "betti1": 91.01333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9089971448,
+              "betti0": 3.06,
+              "betti1": 3.22
+            },
+            "OOD": {
+              "dice": 0.6534358881753334,
+              "betti0": 165.65333333333334,
+              "betti1": 95.67333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9081174558,
+              "betti0": 2.84,
+              "betti1": 2.8
+            },
+            "OOD": {
+              "dice": 0.646763366887,
+              "betti0": 195.28333333333333,
+              "betti1": 91.87
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.907236812,
+              "betti0": 3.62,
+              "betti1": 2.12
+            },
+            "OOD": {
+              "dice": 0.65759771256,
+              "betti0": 198.76,
+              "betti1": 81.97
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.907288761,
+              "betti0": 3.46,
+              "betti1": 3.96
+            },
+            "OOD": {
+              "dice": 0.6424375013833333,
+              "betti0": 191.31666666666666,
+              "betti1": 115.28666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/TopoLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.90766425042,
+            "sd_across_runs": 0.000638094797849086
+          },
+          "betti0": {
+            "mean": 3.136,
+            "sd_across_runs": 0.2899501872927678
+          },
+          "betti1": {
+            "mean": 2.726,
+            "sd_across_runs": 0.6292888402351057
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6492680421148334,
+            "sd_across_runs": 0.00903148630164567
+          },
+          "betti0": {
+            "mean": 193.287,
+            "sd_across_runs": 18.565269144158982
+          },
+          "betti1": {
+            "mean": 99.32533333333333,
+            "sd_across_runs": 16.101499753780317
+          }
+        }
+      }
+    },
+    "supervised/WarpingLoss": {
+      "setting": "supervised",
+      "method": "WarpingLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9100550884,
+              "betti0": 4.96,
+              "betti1": 4.24
+            },
+            "OOD": {
+              "dice": 0.64619467632,
+              "betti0": 249.13,
+              "betti1": 109.01
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9101421374,
+              "betti0": 4.24,
+              "betti1": 4.12
+            },
+            "OOD": {
+              "dice": 0.6512471330866667,
+              "betti0": 224.38,
+              "betti1": 88.81666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9101754094,
+              "betti0": 4.24,
+              "betti1": 3.24
+            },
+            "OOD": {
+              "dice": 0.6471019368866666,
+              "betti0": 257.2033333333333,
+              "betti1": 95.17
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9089908708,
+              "betti0": 3.96,
+              "betti1": 3.5
+            },
+            "OOD": {
+              "dice": 0.640886228902,
+              "betti0": 166.34666666666666,
+              "betti1": 63.62
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9091333118,
+              "betti0": 4.04,
+              "betti1": 4.4
+            },
+            "OOD": {
+              "dice": 0.651808746324,
+              "betti0": 153.40666666666667,
+              "betti1": 73.68666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.9099826102,
+              "betti0": 3.66,
+              "betti1": 3.14
+            },
+            "OOD": {
+              "dice": 0.6421667368706667,
+              "betti0": 186.47666666666666,
+              "betti1": 64.55
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9101500782,
+              "betti0": 3.94,
+              "betti1": 4.0
+            },
+            "OOD": {
+              "dice": 0.645747967514,
+              "betti0": 181.19666666666666,
+              "betti1": 63.54
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9094325738,
+              "betti0": 4.62,
+              "betti1": 3.4
+            },
+            "OOD": {
+              "dice": 0.6391130196253333,
+              "betti0": 216.84666666666666,
+              "betti1": 85.03333333333333
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9091102492,
+              "betti0": 4.24,
+              "betti1": 3.28
+            },
+            "OOD": {
+              "dice": 0.6556066536233334,
+              "betti0": 201.81666666666666,
+              "betti1": 78.64
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9099865342,
+              "betti0": 4.14,
+              "betti1": 2.9
+            },
+            "OOD": {
+              "dice": 0.6499020688633333,
+              "betti0": 205.75,
+              "betti1": 80.25666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/WarpingLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.90971588634,
+            "sd_across_runs": 0.0004890951813529062
+          },
+          "betti0": {
+            "mean": 4.204,
+            "sd_across_runs": 0.3658536440831072
+          },
+          "betti1": {
+            "mean": 3.622,
+            "sd_across_runs": 0.522681122249078
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6469775168016,
+            "sd_across_runs": 0.0052580438658077645
+          },
+          "betti0": {
+            "mean": 204.25533333333334,
+            "sd_across_runs": 33.762879726223105
+          },
+          "betti1": {
+            "mean": 80.23233333333333,
+            "sd_across_runs": 14.884553601835897
+          }
+        }
+      }
+    },
+    "supervised/cbDiceLoss": {
+      "setting": "supervised",
+      "method": "cbDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9084348838,
+              "betti0": 4.02,
+              "betti1": 3.48
+            },
+            "OOD": {
+              "dice": 0.6536207000266666,
+              "betti0": 229.82666666666665,
+              "betti1": 136.26
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.909721266,
+              "betti0": 3.4,
+              "betti1": 2.98
+            },
+            "OOD": {
+              "dice": 0.6484201194706667,
+              "betti0": 189.28666666666666,
+              "betti1": 92.27666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.9091810636,
+              "betti0": 4.66,
+              "betti1": 4.08
+            },
+            "OOD": {
+              "dice": 0.6345213720866667,
+              "betti0": 377.37333333333333,
+              "betti1": 114.67
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9084995474,
+              "betti0": 4.3,
+              "betti1": 4.42
+            },
+            "OOD": {
+              "dice": 0.6488904902576667,
+              "betti0": 250.72,
+              "betti1": 98.02
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.908713771,
+              "betti0": 5.56,
+              "betti1": 3.76
+            },
+            "OOD": {
+              "dice": 0.6498349810316667,
+              "betti0": 207.43,
+              "betti1": 120.15333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.909342593,
+              "betti0": 3.68,
+              "betti1": 2.88
+            },
+            "OOD": {
+              "dice": 0.6384777962033333,
+              "betti0": 214.74333333333334,
+              "betti1": 96.32333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.9094199094,
+              "betti0": 4.5,
+              "betti1": 3.4
+            },
+            "OOD": {
+              "dice": 0.648716477294,
+              "betti0": 184.05333333333334,
+              "betti1": 101.20666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.9090741282,
+              "betti0": 4.2,
+              "betti1": 5.42
+            },
+            "OOD": {
+              "dice": 0.6367625879046667,
+              "betti0": 219.71,
+              "betti1": 117.41666666666667
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9083519806,
+              "betti0": 3.78,
+              "betti1": 3.38
+            },
+            "OOD": {
+              "dice": 0.65126419143,
+              "betti0": 237.78,
+              "betti1": 86.0
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.909141022,
+              "betti0": 4.26,
+              "betti1": 4.3
+            },
+            "OOD": {
+              "dice": 0.6412383332333333,
+              "betti0": 224.01666666666668,
+              "betti1": 98.43333333333334
+            }
+          },
+          "source_path": "results/supervised/accurate/large/cbDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9089880164999999,
+            "sd_across_runs": 0.00046455641891803365
+          },
+          "betti0": {
+            "mean": 4.236,
+            "sd_across_runs": 0.6028672232663581
+          },
+          "betti1": {
+            "mean": 3.81,
+            "sd_across_runs": 0.7670578712051508
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6451747048938666,
+            "sd_across_runs": 0.006762803512327984
+          },
+          "betti0": {
+            "mean": 233.494,
+            "sd_across_runs": 54.507107290565195
+          },
+          "betti1": {
+            "mean": 106.076,
+            "sd_across_runs": 15.44637500324075
+          }
+        }
+      }
+    },
+    "supervised/clDiceLoss": {
+      "setting": "supervised",
+      "method": "clDiceLoss",
+      "runs": [
+        {
+          "seed_label": 1,
+          "means": {
+            "ID": {
+              "dice": 0.9106946514,
+              "betti0": 0.98,
+              "betti1": 1.22
+            },
+            "OOD": {
+              "dice": 0.65732440779,
+              "betti0": 107.59,
+              "betti1": 54.586666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/1.csv"
+        },
+        {
+          "seed_label": 10,
+          "means": {
+            "ID": {
+              "dice": 0.9112333232000001,
+              "betti0": 1.2,
+              "betti1": 1.88
+            },
+            "OOD": {
+              "dice": 0.65561998155625,
+              "betti0": 70.01,
+              "betti1": 51.13666666666666
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/10.csv"
+        },
+        {
+          "seed_label": 2,
+          "means": {
+            "ID": {
+              "dice": 0.911558161,
+              "betti0": 1.14,
+              "betti1": 1.42
+            },
+            "OOD": {
+              "dice": 0.6693400773366667,
+              "betti0": 70.88666666666667,
+              "betti1": 67.62
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/2.csv"
+        },
+        {
+          "seed_label": 3,
+          "means": {
+            "ID": {
+              "dice": 0.9121429314,
+              "betti0": 1.0,
+              "betti1": 1.28
+            },
+            "OOD": {
+              "dice": 0.6518804914953333,
+              "betti0": 87.51666666666667,
+              "betti1": 47.77
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/3.csv"
+        },
+        {
+          "seed_label": 4,
+          "means": {
+            "ID": {
+              "dice": 0.9111560818,
+              "betti0": 1.5,
+              "betti1": 1.62
+            },
+            "OOD": {
+              "dice": 0.6490604905666667,
+              "betti0": 72.77,
+              "betti1": 48.31
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/4.csv"
+        },
+        {
+          "seed_label": 5,
+          "means": {
+            "ID": {
+              "dice": 0.910840204,
+              "betti0": 1.14,
+              "betti1": 1.5
+            },
+            "OOD": {
+              "dice": 0.6530943080473334,
+              "betti0": 64.22666666666667,
+              "betti1": 53.91
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/5.csv"
+        },
+        {
+          "seed_label": 6,
+          "means": {
+            "ID": {
+              "dice": 0.911566428,
+              "betti0": 1.34,
+              "betti1": 1.28
+            },
+            "OOD": {
+              "dice": 0.6583457153903334,
+              "betti0": 87.54666666666667,
+              "betti1": 46.806666666666665
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/6.csv"
+        },
+        {
+          "seed_label": 7,
+          "means": {
+            "ID": {
+              "dice": 0.911938768,
+              "betti0": 1.36,
+              "betti1": 1.42
+            },
+            "OOD": {
+              "dice": 0.6411566125676667,
+              "betti0": 83.32,
+              "betti1": 50.83
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/7.csv"
+        },
+        {
+          "seed_label": 8,
+          "means": {
+            "ID": {
+              "dice": 0.9119707572,
+              "betti0": 0.98,
+              "betti1": 1.22
+            },
+            "OOD": {
+              "dice": 0.6712023162513333,
+              "betti0": 87.60333333333334,
+              "betti1": 46.376666666666665
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/8.csv"
+        },
+        {
+          "seed_label": 9,
+          "means": {
+            "ID": {
+              "dice": 0.9116337886,
+              "betti0": 1.1,
+              "betti1": 1.26
+            },
+            "OOD": {
+              "dice": 0.6568391063623333,
+              "betti0": 81.87,
+              "betti1": 49.02
+            }
+          },
+          "source_path": "results/supervised/accurate/large/clDiceLoss/9.csv"
+        }
+      ],
+      "summary": {
+        "ID": {
+          "dice": {
+            "mean": 0.9114735094599999,
+            "sd_across_runs": 0.00048528126333191514
+          },
+          "betti0": {
+            "mean": 1.174,
+            "sd_across_runs": 0.17715028146244147
+          },
+          "betti1": {
+            "mean": 1.41,
+            "sd_across_runs": 0.21129231988987304
+          }
+        },
+        "OOD": {
+          "dice": {
+            "mean": 0.6563863507363916,
+            "sd_across_runs": 0.008879293651309962
+          },
+          "betti0": {
+            "mean": 81.334,
+            "sd_across_runs": 12.530491088284618
+          },
+          "betti1": {
+            "mean": 51.63666666666667,
+            "sd_across_runs": 6.272510277806263
+          }
+        }
+      }
+    }
+  }
+}

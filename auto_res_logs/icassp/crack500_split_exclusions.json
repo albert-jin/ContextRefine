@@ -1,0 +1,278 @@
+{
+  "created": 1789627045.741425,
+  "status": "frozen_before_training",
+  "policy": "Keep test over validation over training; remove only reviewed capture-family overlaps from lower-priority split. Raw archive and images unchanged. No model or test-mask scores used.",
+  "original_counts": {
+    "train": 250,
+    "val": 50,
+    "test": 200
+  },
+  "clean_counts": {
+    "train": 243,
+    "val": 49,
+    "test": 200
+  },
+  "exclude_ids": {
+    "train": [
+      "20160328_151056",
+      "20160328_151243",
+      "20160328_154452",
+      "20160328_154454",
+      "20160329_103609",
+      "20160329_103800",
+      "20160329_111111"
+    ],
+    "val": [
+      "20160329_103807"
+    ]
+  },
+  "review": "All eight rotation-aligned pairs visually confirmed to depict the same capture region. JPEG bytes differ. Candidate SSIM is supporting evidence, not a universal duplicate threshold. Complementary rotation/correlation search found no additional candidate at its stated threshold; absence of all possible related scenes is not established.",
+  "evidence": {
+    "auto_res_logs/icassp/crack500_rotation_identity_audit.json": "09c4548581adb44409340909a2265f134a42ea17ef633da68051961454aa2322",
+    "auto_res_logs/icassp/crack500_correlation_identity_audit.json": "23bd3225895f3e52d5f4703c81fd9b2bbf3899bf20ae161b03acf72593e8ce9f",
+    "auto_res_logs/icassp/crack500_overlap_aligned.png": "b20a617b85d52d60dbe0dbfd3e20975eb275e5088fd72a13600b21e280e1b363"
+  },
+  "pairs": [
+    {
+      "a": {
+        "split": "train",
+        "id": "20160328_151056",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160328_151056.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "b04dbc56d0870bca48dd81b077c60f4bd2a19dacdd64d928bcae569a75e6c518"
+      },
+      "b": {
+        "split": "val",
+        "id": "20160328_151057",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/valdata/valdata/20160328_151057.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "e7ec0b5c0f94b77e1159a85486da91cfed0fffb2f0224b5faa11651943c45cec"
+      },
+      "phash_hamming": 2,
+      "best_alignment": {
+        "transform": "flip0_rot180",
+        "ssim": 0.9976538192248775,
+        "mae": 0.2607879638671875
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": true
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160328_151243",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160328_151243.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "5a37ea358225e18543e97d6d6f5973280d73f23d04e21ecaa47534efe5a60ead"
+      },
+      "b": {
+        "split": "val",
+        "id": "20160328_151244",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/valdata/valdata/20160328_151244.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "3ebffe943545d3759a549ffde128625bf1ed1c73e850a81a65ac842706d80c96"
+      },
+      "phash_hamming": 0,
+      "best_alignment": {
+        "transform": "flip0_rot180",
+        "ssim": 0.9953999920303852,
+        "mae": 0.3422495524088542
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": true
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160328_154452",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160328_154452.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "9a56b1fe6df67023479f81c7e369d8289299058442c7ff85430ad4dc86122776"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160328_154452",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160328_154452.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "6d2312a9ace0ba8014e463a7b0f299a7609b2126eb5661df2a2da839b159f4bd"
+      },
+      "phash_hamming": 10,
+      "best_alignment": {
+        "transform": "flip0_rot180",
+        "ssim": 0.9882782165779976,
+        "mae": 0.9635518391927084
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": false
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160328_154454",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160328_154454.jpg",
+        "size": [
+          1440,
+          2560
+        ],
+        "sha256": "b3d91872e807d63e1a50c768043cb15d16425dcb3add01750e447d0f5c1de113"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160328_154454",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160328_154454.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "3639ea1ee93e348f7a45aac1ced418338b626dd5351c37aabf682471d047844a"
+      },
+      "phash_hamming": 18,
+      "best_alignment": {
+        "transform": "flip0_rot270",
+        "ssim": 0.9872398629884643,
+        "mae": 1.2014312744140625
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": false
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160329_103609",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160329_103609.jpg",
+        "size": [
+          1440,
+          2560
+        ],
+        "sha256": "60be3310cea83ea96a4813534715b716ed09e5805ff05d38e97a1811d0d0c676"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160329_103609",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160329_103609.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "1222ca72e5bf586e5800af834b57224eb9303aa330e52e3201d5ba83c1acc91e"
+      },
+      "phash_hamming": 18,
+      "best_alignment": {
+        "transform": "flip0_rot270",
+        "ssim": 0.9930822011504697,
+        "mae": 0.8621826171875
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": true
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160329_103800",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160329_103800.jpg",
+        "size": [
+          1440,
+          2560
+        ],
+        "sha256": "965bdb56a6112f2e460724979620571fcd74c2443568dfd56a950be0c8cab799"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160329_103800",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160329_103800.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "95959493ea69c1545f79c766c2ad12cd9b26e68ae09e7712604fabcf6fa2e1f4"
+      },
+      "phash_hamming": 14,
+      "best_alignment": {
+        "transform": "flip0_rot270",
+        "ssim": 0.9900241970884118,
+        "mae": 0.7995096842447916
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": true
+    },
+    {
+      "a": {
+        "split": "train",
+        "id": "20160329_111111",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/traindata/traindata/20160329_111111.jpg",
+        "size": [
+          1440,
+          2560
+        ],
+        "sha256": "b5ea0a810d236a262ccdefc83ae1f7504b4c6cc44d98a7f1569f9ab6466005f1"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160329_111111",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160329_111111.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "3b5e86f2a67dde34e2ec2ed34ed2f431947b32884a2aa7dfe30c60e0e17162bf"
+      },
+      "phash_hamming": 16,
+      "best_alignment": {
+        "transform": "flip0_rot270",
+        "ssim": 0.9952056693197139,
+        "mae": 0.7181345621744791
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": true
+    },
+    {
+      "a": {
+        "split": "val",
+        "id": "20160329_103807",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/valdata/valdata/20160329_103807.jpg",
+        "size": [
+          1440,
+          2560
+        ],
+        "sha256": "7030ad6ac33d5592e7cfd29c81ff6bf45a109bbe23e11592626b7b38dfb85c0e"
+      },
+      "b": {
+        "split": "test",
+        "id": "20160329_103807",
+        "path": "data/icassp_downloads/crack500/raw/CRACK500/testdata/testdata/20160329_103807.jpg",
+        "size": [
+          2560,
+          1440
+        ],
+        "sha256": "c05bc5cc354909f6752cd5aa12452a15ac972e85b3cf2dbe3475d44470258a26"
+      },
+      "phash_hamming": 18,
+      "best_alignment": {
+        "transform": "flip0_rot270",
+        "ssim": 0.9458893504986636,
+        "mae": 4.054636637369792
+      },
+      "exact_file_duplicate": false,
+      "same_photo_candidate": false
+    }
+  ],
+  "comparison_scope": "Matched within this cleaned 243/49/200 protocol; not exact published 250/50/200 split reproduction."
+}

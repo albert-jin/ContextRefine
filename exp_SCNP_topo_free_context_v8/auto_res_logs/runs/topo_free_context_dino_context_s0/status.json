@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "pid": 170597,
+  "created": 1789686654.404776,
+  "step": 3000,
+  "elapsed_sec": 1461.532840013504,
+  "best_selection_score": 0.9420270740453589,
+  "qualified_checkpoint": true
+}

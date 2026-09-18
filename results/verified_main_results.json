@@ -1,0 +1,18 @@
+[
+  {
+    "dataset": "TopoMortar",
+    "test_images": 350,
+    "baseline": "matched ConvNeXt SCNP local base",
+    "baseline_dice_percent": 81.9754096474967,
+    "contextrefine_v8_dice_percent": 82.16875495904674,
+    "improvement_pp": 0.19334531155003276
+  },
+  {
+    "dataset": "Crack500",
+    "test_images": 200,
+    "baseline": "matched ConvNeXt SCNP local base",
+    "baseline_dice_percent": 71.03723672732887,
+    "contextrefine_v8_dice_percent": 71.1896784168098,
+    "improvement_pp": 0.15244168948092351
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "scope": "English report strings and output Markdown filename only; training and evaluation logic unchanged.",
+  "archived_hashes_preserved": true,
+  "files": [
+    {
+      "path": "exp_SCNP_crack500_context_v8_transfer/research/finalize_transfer.py",
+      "archived_sha256": "830831f797c82723b5294cdbaa62726b5b408d72270607a39fd7382cc3ecbb65",
+      "localized_sha256": "dc2b3de8354bee14c8986b6320ef78b6c52b0622ff99813b2704374ab2cb68c9"
+    }
+  ]
+}
