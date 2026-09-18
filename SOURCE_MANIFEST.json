@@ -32,6 +32,10 @@
   ],
   "files": [
     {
+      "path": ".gitattributes",
+      "sha256": "c2b1d2c7e0591faafc23826cb164c3a6c741195691c4850d7161c7eeebef5c55"
+    },
+    {
       "path": ".gitignore",
       "sha256": "a1bb34cf5c4ce4b258a0af79f448bbc3d968f7ef0eeab8d2d4953d3479ce0337"
     },
